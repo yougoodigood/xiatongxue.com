@@ -2,10 +2,7 @@ package com.xiayu.entity;
 
 import com.xiayu.common.BaseEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "t_city")
@@ -15,6 +12,10 @@ public class City extends BaseEntity {
     private String id;
     @Column
     private String cityName;
+
+    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
+    @JoinColumn(name="province_id")
+    private Province province;
 
     public String getId() {
         return id;

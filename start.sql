@@ -418,11 +418,13 @@ create table t_user_class
 (
    id                   varchar(255)                   not null PRIMARY KEY,
    class_number         varchar(255)                   null,
-   class_name           varchar(255)                    null,
+   class_name           varchar(255)                   null,
    user_amount          int                            null,
    create_id            varchar(255)                   null,
    create_time          datetime                       null,
-   delflag              boolean                        null
+   delflag              boolean                        null,
+   update_id            varchar(255)                   null,
+   update_time          datetime                       null
 );
 
 /*==============================================================*/

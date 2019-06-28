@@ -4,17 +4,21 @@ import com.xiayu.common.BaseEntity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity
 @Table(name = "t_user")
 public class User extends BaseEntity {
     @Id
-    @Column
     private String id;
-    @Column(name = "user_class_id")
+
+    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
+    @JoinColumn(name="user_class_id")
     private UserClass userClass;
-    @Column(name = "user_group_id")
+
+    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
+    @JoinColumn(name="user_group_id")
     private UserGroup userGroup;
     @Column
     private int userNumber;
@@ -38,6 +42,9 @@ public class User extends BaseEntity {
     private boolean isEmailChecked;
     @Column
     private String picture;
+
+    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    private List<UserLogin> userLogins;
 
     public String getId() {
         return id;
@@ -133,5 +140,21 @@ public class User extends BaseEntity {
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public UserClass getUserClass() {
+        return userClass;
+    }
+
+    public void setUserClass(UserClass userClass) {
+        this.userClass = userClass;
+    }
+
+    public UserGroup getUserGroup() {
+        return userGroup;
+    }
+
+    public void setUserGroup(UserGroup userGroup) {
+        this.userGroup = userGroup;
     }
 }

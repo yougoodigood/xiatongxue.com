@@ -2,10 +2,8 @@ package com.xiayu.entity;
 
 import com.xiayu.common.BaseEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "t_user_group")
@@ -13,10 +11,14 @@ public class UserGroup extends BaseEntity {
     @Id
     @Column
     private String id;
-    @Column(name = "role_id")
+    @OneToOne(cascade=CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinColumn(name = "role_id", referencedColumnName = "id")
     private Role role;
     @Column
     private int groupNumbers;
+
+    @OneToMany(mappedBy = "userGroup",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    List<User> users;
 
     public String getId() {
         return id;
@@ -40,5 +42,13 @@ public class UserGroup extends BaseEntity {
 
     public void setGroupNumbers(int groupNumbers) {
         this.groupNumbers = groupNumbers;
+    }
+
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 }

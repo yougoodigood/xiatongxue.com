@@ -2,10 +2,8 @@ package com.xiayu.entity;
 
 import com.xiayu.common.BaseEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "t_permission")
@@ -19,6 +17,9 @@ public class Permission extends BaseEntity {
     private String url;
     @Column
     private String resourceType;
+
+    @ManyToMany(mappedBy = "permissions")
+    private List<Role> roles;
 
     public String getId() {
         return id;
@@ -50,5 +51,13 @@ public class Permission extends BaseEntity {
 
     public void setResourceType(String resourceType) {
         this.resourceType = resourceType;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 }

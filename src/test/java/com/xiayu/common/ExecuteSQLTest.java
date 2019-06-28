@@ -1,6 +1,7 @@
 package com.xiayu.common;
 
 import com.xiayu.entity.User;
+import com.xiayu.entity.UserClass;
 import com.xiayu.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,6 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 
@@ -52,8 +54,11 @@ public class ExecuteSQLTest {
 
     @Test
     public void getUser(){
-        Optional<User> user = userService.findById("4532");
-        user.ifPresent(user1 -> System.out.println());
+//        List<User> users = userService.getUserList();
+//        logger.info("finished");
+
+        Optional<User> user = userService.findById("1");
+        UserClass userClass = user.get().getUserClass();
         logger.info("finished");
     }
 }

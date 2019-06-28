@@ -2,10 +2,7 @@ package com.xiayu.entity;
 
 import com.xiayu.common.BaseEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -16,6 +13,7 @@ public class Country extends BaseEntity {
     private String id;
     @Column
     private String countryName;
+    @OneToMany(mappedBy = "country",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
     private List<Province> provinces;
 
     public String getId() {
@@ -34,11 +32,4 @@ public class Country extends BaseEntity {
         this.countryName = countryName;
     }
 
-    public List<Province> getProvinces() {
-        return provinces;
-    }
-
-    public void setProvinces(List<Province> provinces) {
-        this.provinces = provinces;
-    }
 }
