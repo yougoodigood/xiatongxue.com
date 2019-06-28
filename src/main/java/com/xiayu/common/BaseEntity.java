@@ -3,21 +3,53 @@ package com.xiayu.common;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
+import javax.persistence.*;
 import java.util.Date;
 
-@Setter
-@Getter
+@MappedSuperclass
 public class BaseEntity {
     @Column
-    private String id;
+    String createId;
     @Column
-    private String createId;
+    @Temporal(TemporalType.TIMESTAMP)
+    Date createTime;
     @Column
-    private Date createTime;
+    String updateId;
     @Column
-    private String updateId;
+    @Temporal(TemporalType.TIMESTAMP)
+    Date updateTime;
     @Column
-    private Date updateTime;
+    boolean delflag;
 
+    public String getCreateId() {
+        return createId;
+    }
+
+    public void setCreateId(String createId) {
+        this.createId = createId;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getUpdateId() {
+        return updateId;
+    }
+
+    public void setUpdateId(String updateId) {
+        this.updateId = updateId;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
 }
