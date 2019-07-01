@@ -9,13 +9,13 @@ import javax.persistence.*;
 public class RealtimeComments extends BaseEntity {
     @Id
     private String id;
-    @OneToMany
-    @JoinColumn(name = "user_id")
+
+    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
+    @JoinColumn(name="user_id")
     private User user;
 
-//    @OneToMany
-//    @JoinColumn(name = "video_id")
-//    private Video video;
+    @Column
+    private String videoId;
 
     @Column
     private String comment;

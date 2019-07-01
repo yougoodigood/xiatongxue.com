@@ -9,12 +9,13 @@ import javax.persistence.*;
 public class UserDownload extends BaseEntity {
     @Id
     private String id;
-    @OneToMany
-    @JoinColumn(name = "user_id")
+
+    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
+    @JoinColumn(name="user_id")
     private User user;
-//    @OneToMany
-//    @JoinColumn(name = "file_id")
-//    private File file;
+
+    private String fileId;
+
     @Column
     private int downloadTime;
 
@@ -40,5 +41,13 @@ public class UserDownload extends BaseEntity {
 
     public void setDownloadTime(int downloadTime) {
         this.downloadTime = downloadTime;
+    }
+
+    public String getFileId() {
+        return fileId;
+    }
+
+    public void setFileId(String fileId) {
+        this.fileId = fileId;
     }
 }

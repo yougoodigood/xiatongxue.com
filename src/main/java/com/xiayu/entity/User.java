@@ -51,6 +51,12 @@ public class User extends BaseEntity {
     private List<UserLikeComment> userLikeComments;
     @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
     private List<FileSuggestion> fileSuggestions;
+    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    private List<UserVideoNote> userVideoNotes;
+    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    private List<RealtimeComments> realtimeComments;
+    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    private List<UserDownload> userDownloads;
 
     public String getId() {
         return id;
@@ -162,37 +168,5 @@ public class User extends BaseEntity {
 
     public void setUserGroup(UserGroup userGroup) {
         this.userGroup = userGroup;
-    }
-
-    public List<UserLogin> getUserLogins() {
-        return userLogins;
-    }
-
-    public void setUserLogins(List<UserLogin> userLogins) {
-        this.userLogins = userLogins;
-    }
-
-    public List<FileComment> getFileComments() {
-        return fileComments;
-    }
-
-    public void setFileComments(List<FileComment> fileComments) {
-        this.fileComments = fileComments;
-    }
-
-    public List<UserLikeComment> getUserLikeComments() {
-        return userLikeComments;
-    }
-
-    public void setUserLikeComments(List<UserLikeComment> userLikeComments) {
-        this.userLikeComments = userLikeComments;
-    }
-
-    public List<FileSuggestion> getFileSuggestions() {
-        return fileSuggestions;
-    }
-
-    public void setFileSuggestions(List<FileSuggestion> fileSuggestions) {
-        this.fileSuggestions = fileSuggestions;
     }
 }

@@ -10,13 +10,13 @@ public class UserVideoNote extends BaseEntity {
     @Id
     private String id;
 
-    @OneToMany
-    @JoinColumn(name = "user_id")
+    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
+    @JoinColumn(name="user_id")
     private User user;
 
-//    @OneToMany
-//    @JoinColumn(name = "video_id")
-//    private Video video;
+    @OneToOne(cascade=CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinColumn(name = "video_id", referencedColumnName = "id")
+    private Video video;
 
     @Column
     private String noteContent;
@@ -43,5 +43,13 @@ public class UserVideoNote extends BaseEntity {
 
     public void setNoteContent(String noteContent) {
         this.noteContent = noteContent;
+    }
+
+    public Video getVideo() {
+        return video;
+    }
+
+    public void setVideo(Video video) {
+        this.video = video;
     }
 }
