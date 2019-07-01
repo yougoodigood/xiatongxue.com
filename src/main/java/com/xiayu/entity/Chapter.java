@@ -20,11 +20,11 @@ public class Chapter extends BaseEntity {
     @Column
     private int importance;
 
-    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
-    @JoinColumn(name="course_id")
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "course_id")
     private Course course;
 
-    @OneToMany(mappedBy = "chapter",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "chapter", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Section> sections;
 
     public String getId() {
@@ -65,5 +65,13 @@ public class Chapter extends BaseEntity {
 
     public void setCourse(Course course) {
         this.course = course;
+    }
+
+    public List<Section> getSections() {
+        return sections;
+    }
+
+    public void setSections(List<Section> sections) {
+        this.sections = sections;
     }
 }

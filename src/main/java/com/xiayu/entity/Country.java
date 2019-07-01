@@ -13,7 +13,7 @@ public class Country extends BaseEntity {
     private String id;
     @Column
     private String countryName;
-    @OneToMany(mappedBy = "country",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "country", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Province> provinces;
 
     public String getId() {
@@ -32,4 +32,11 @@ public class Country extends BaseEntity {
         this.countryName = countryName;
     }
 
+    public List<Province> getProvinces() {
+        return provinces;
+    }
+
+    public void setProvinces(List<Province> provinces) {
+        this.provinces = provinces;
+    }
 }

@@ -11,13 +11,13 @@ public class UserGroup extends BaseEntity {
     @Id
     @Column
     private String id;
-    @OneToOne(cascade=CascadeType.ALL,fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id", referencedColumnName = "id")
     private Role role;
     @Column
     private int groupNumbers;
 
-    @OneToMany(mappedBy = "userGroup",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "userGroup", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     List<User> users;
 
     public String getId() {

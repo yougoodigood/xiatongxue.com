@@ -10,8 +10,8 @@ public class RealtimeComments extends BaseEntity {
     @Id
     private String id;
 
-    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
-    @JoinColumn(name="user_id")
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "user_id")
     private User user;
 
     @Column
@@ -75,5 +75,13 @@ public class RealtimeComments extends BaseEntity {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getVideoId() {
+        return videoId;
+    }
+
+    public void setVideoId(String videoId) {
+        this.videoId = videoId;
     }
 }

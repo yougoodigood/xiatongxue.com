@@ -15,7 +15,7 @@ public class Role extends BaseEntity {
     private String roleName;
 
     @ManyToMany
-    @JoinTable(name = "roles_permission",joinColumns = @JoinColumn(name = "role_id"),
+    @JoinTable(name = "roles_permission", joinColumns = @JoinColumn(name = "role_id"),
             inverseJoinColumns = @JoinColumn(name = "permission_id"))
     private List<Permission> permissions;
 
@@ -33,5 +33,13 @@ public class Role extends BaseEntity {
 
     public void setRoleName(String roleName) {
         this.roleName = roleName;
+    }
+
+    public List<Permission> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(List<Permission> permissions) {
+        this.permissions = permissions;
     }
 }

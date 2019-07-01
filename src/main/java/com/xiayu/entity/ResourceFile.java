@@ -41,7 +41,7 @@ public class ResourceFile extends BaseEntity {
     @Column
     private int notLikeTimes;
 
-    @OneToMany(mappedBy = "resourceFile",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "resourceFile", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     List<FileComment> fileComments;
 
     public String getId() {

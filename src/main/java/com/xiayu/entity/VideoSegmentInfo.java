@@ -10,8 +10,8 @@ public class VideoSegmentInfo extends BaseEntity {
     @Id
     private String id;
 
-    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
-    @JoinColumn(name="video_id")
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "video_id")
     private Video video;
 
     @Column

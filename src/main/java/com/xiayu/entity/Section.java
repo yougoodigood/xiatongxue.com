@@ -15,8 +15,8 @@ public class Section {
     @Column
     private String sectionName;
 
-    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
-    @JoinColumn(name="chapter_id")
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "chapter_id")
     private Chapter chapter;
 
     public String getId() {

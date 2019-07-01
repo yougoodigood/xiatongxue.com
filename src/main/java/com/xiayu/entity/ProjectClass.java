@@ -18,7 +18,7 @@ public class ProjectClass {
     @Column
     private String shortComment;
 
-    @OneToMany(mappedBy = "projectClass",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "projectClass", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Course> courses;
 
     public String getId() {
@@ -51,5 +51,13 @@ public class ProjectClass {
 
     public void setShortComment(String shortComment) {
         this.shortComment = shortComment;
+    }
+
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
     }
 }

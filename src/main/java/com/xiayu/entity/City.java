@@ -13,8 +13,8 @@ public class City extends BaseEntity {
     @Column
     private String cityName;
 
-    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
-    @JoinColumn(name="province_id")
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "province_id")
     private Province province;
 
     public String getId() {
@@ -31,5 +31,13 @@ public class City extends BaseEntity {
 
     public void setCityName(String cityName) {
         this.cityName = cityName;
+    }
+
+    public Province getProvince() {
+        return province;
+    }
+
+    public void setProvince(Province province) {
+        this.province = province;
     }
 }

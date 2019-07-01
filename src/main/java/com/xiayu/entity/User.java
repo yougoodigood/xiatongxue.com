@@ -13,12 +13,12 @@ public class User extends BaseEntity {
     @Id
     private String id;
 
-    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
-    @JoinColumn(name="user_class_id")
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "user_class_id")
     private UserClass userClass;
 
-    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
-    @JoinColumn(name="user_group_id")
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "user_group_id")
     private UserGroup userGroup;
     @Column
     private int userNumber;
@@ -43,19 +43,19 @@ public class User extends BaseEntity {
     @Column
     private String picture;
 
-    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserLogin> userLogins;
-    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<FileComment> fileComments;
-    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserLikeComment> userLikeComments;
-    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<FileSuggestion> fileSuggestions;
-    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserVideoNote> userVideoNotes;
-    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<RealtimeComments> realtimeComments;
-    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserDownload> userDownloads;
 
     public String getId() {
@@ -168,5 +168,61 @@ public class User extends BaseEntity {
 
     public void setUserGroup(UserGroup userGroup) {
         this.userGroup = userGroup;
+    }
+
+    public List<UserLogin> getUserLogins() {
+        return userLogins;
+    }
+
+    public void setUserLogins(List<UserLogin> userLogins) {
+        this.userLogins = userLogins;
+    }
+
+    public List<FileComment> getFileComments() {
+        return fileComments;
+    }
+
+    public void setFileComments(List<FileComment> fileComments) {
+        this.fileComments = fileComments;
+    }
+
+    public List<UserLikeComment> getUserLikeComments() {
+        return userLikeComments;
+    }
+
+    public void setUserLikeComments(List<UserLikeComment> userLikeComments) {
+        this.userLikeComments = userLikeComments;
+    }
+
+    public List<FileSuggestion> getFileSuggestions() {
+        return fileSuggestions;
+    }
+
+    public void setFileSuggestions(List<FileSuggestion> fileSuggestions) {
+        this.fileSuggestions = fileSuggestions;
+    }
+
+    public List<UserVideoNote> getUserVideoNotes() {
+        return userVideoNotes;
+    }
+
+    public void setUserVideoNotes(List<UserVideoNote> userVideoNotes) {
+        this.userVideoNotes = userVideoNotes;
+    }
+
+    public List<RealtimeComments> getRealtimeComments() {
+        return realtimeComments;
+    }
+
+    public void setRealtimeComments(List<RealtimeComments> realtimeComments) {
+        this.realtimeComments = realtimeComments;
+    }
+
+    public List<UserDownload> getUserDownloads() {
+        return userDownloads;
+    }
+
+    public void setUserDownloads(List<UserDownload> userDownloads) {
+        this.userDownloads = userDownloads;
     }
 }

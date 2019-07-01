@@ -15,11 +15,11 @@ public class Province extends BaseEntity {
     @Column
     private String provinceName;
 
-    @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
-    @JoinColumn(name="country_id")
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "country_id")
     private Country country;
 
-    @OneToMany(mappedBy = "province",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "province", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<City> cities;
 
     public String getId() {
@@ -38,11 +38,19 @@ public class Province extends BaseEntity {
         this.provinceName = provinceName;
     }
 
-//    public List<City> getCities() {
-//        return cities;
-//    }
-//
-//    public void setCities(List<City> cities) {
-//        this.cities = cities;
-//    }
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
+    }
+
+    public List<City> getCities() {
+        return cities;
+    }
+
+    public void setCities(List<City> cities) {
+        this.cities = cities;
+    }
 }

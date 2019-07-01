@@ -17,7 +17,7 @@ public class UserClass extends BaseEntity {
     @Column
     private int userAmount;
 
-    @OneToMany(mappedBy = "userClass",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "userClass", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<User> users;//文章列表
 
     public int getUserAmount() {
