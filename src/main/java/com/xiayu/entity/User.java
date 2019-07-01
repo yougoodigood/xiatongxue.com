@@ -45,6 +45,10 @@ public class User extends BaseEntity {
 
     @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
     private List<UserLogin> userLogins;
+    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    private List<FileComment> fileComments;
+    @OneToMany(mappedBy = "user",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+    private List<UserLikeComment> userLikeComments;
 
     public String getId() {
         return id;
