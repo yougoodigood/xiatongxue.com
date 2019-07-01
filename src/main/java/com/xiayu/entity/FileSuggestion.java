@@ -1,12 +1,18 @@
 package com.xiayu.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.xiayu.common.BaseEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
+@Setter
+@Getter
 @Table(name = "t_file_suggestion")
-public class FileSuggestion extends BaseEntity {
+public class FileSuggestion extends BaseEntity implements Serializable {
     @Id
     private String id;
 
@@ -21,35 +27,14 @@ public class FileSuggestion extends BaseEntity {
     @Column
     private String suggestion;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
+    @JsonBackReference
     public User getUser() {
         return user;
     }
 
+    @JsonBackReference
     public void setUser(User user) {
         this.user = user;
     }
 
-    public ResourceFile getResourceFile() {
-        return resourceFile;
-    }
-
-    public void setResourceFile(ResourceFile resourceFile) {
-        this.resourceFile = resourceFile;
-    }
-
-    public String getSuggestion() {
-        return suggestion;
-    }
-
-    public void setSuggestion(String suggestion) {
-        this.suggestion = suggestion;
-    }
 }

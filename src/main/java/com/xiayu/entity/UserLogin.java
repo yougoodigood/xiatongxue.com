@@ -1,14 +1,19 @@
 package com.xiayu.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.xiayu.common.BaseEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
+@Setter
+@Getter
 @Table(name = "t_user_login")
-public class UserLogin extends BaseEntity {
+public class UserLogin extends BaseEntity implements Serializable {
     @Id
-    @Column
     private String id;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "user_id")
@@ -32,51 +37,13 @@ public class UserLogin extends BaseEntity {
         this.id = id;
     }
 
+    @JsonBackReference
     public User getUser() {
         return user;
     }
 
+    @JsonBackReference
     public void setUser(User user) {
         this.user = user;
-    }
-
-    public String getLoginIp() {
-        return loginIp;
-    }
-
-    public void setLoginIp(String loginIp) {
-        this.loginIp = loginIp;
-    }
-
-    public String getLoginBrowser() {
-        return loginBrowser;
-    }
-
-    public void setLoginBrowser(String loginBrowser) {
-        this.loginBrowser = loginBrowser;
-    }
-
-    public String getLoginPlace() {
-        return loginPlace;
-    }
-
-    public void setLoginPlace(String loginPlace) {
-        this.loginPlace = loginPlace;
-    }
-
-    public String getIdentifyCode() {
-        return identifyCode;
-    }
-
-    public void setIdentifyCode(String identifyCode) {
-        this.identifyCode = identifyCode;
-    }
-
-    public String getLoginDomain() {
-        return loginDomain;
-    }
-
-    public void setLoginDomain(String loginDomain) {
-        this.loginDomain = loginDomain;
     }
 }

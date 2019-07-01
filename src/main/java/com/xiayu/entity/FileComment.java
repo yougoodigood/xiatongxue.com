@@ -1,12 +1,18 @@
 package com.xiayu.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.xiayu.common.BaseEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "t_file_comment")
-public class FileComment extends BaseEntity {
+@Setter
+@Getter
+public class FileComment extends BaseEntity implements Serializable {
 
     @Id
     private String id;
@@ -21,58 +27,18 @@ public class FileComment extends BaseEntity {
 
     @Column
     private String comments;
-
     @Column
     private int likeTimes;
-
     @Column
     private int notLikeTimes;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public ResourceFile getResourceFile() {
-        return resourceFile;
-    }
-
-    public void setResourceFile(ResourceFile resourceFile) {
-        this.resourceFile = resourceFile;
-    }
-
+    @JsonBackReference
     public User getUser() {
         return user;
     }
 
+    @JsonBackReference
     public void setUser(User user) {
         this.user = user;
-    }
-
-    public String getComments() {
-        return comments;
-    }
-
-    public void setComments(String comments) {
-        this.comments = comments;
-    }
-
-    public int getLikeTimes() {
-        return likeTimes;
-    }
-
-    public void setLikeTimes(int likeTimes) {
-        this.likeTimes = likeTimes;
-    }
-
-    public int getNotLikeTimes() {
-        return notLikeTimes;
-    }
-
-    public void setNotLikeTimes(int notLikeTimes) {
-        this.notLikeTimes = notLikeTimes;
     }
 }

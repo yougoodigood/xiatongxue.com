@@ -1,12 +1,14 @@
 package com.xiayu.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.xiayu.common.BaseEntity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "t_user_download")
-public class UserDownload extends BaseEntity {
+public class UserDownload extends BaseEntity implements Serializable {
     @Id
     private String id;
 
@@ -27,10 +29,12 @@ public class UserDownload extends BaseEntity {
         this.id = id;
     }
 
+    @JsonBackReference
     public User getUser() {
         return user;
     }
 
+    @JsonBackReference
     public void setUser(User user) {
         this.user = user;
     }

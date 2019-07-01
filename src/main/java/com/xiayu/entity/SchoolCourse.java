@@ -3,10 +3,11 @@ package com.xiayu.entity;
 import com.xiayu.common.BaseEntity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "t_school_course")
-public class SchoolCourse extends BaseEntity {
+public class SchoolCourse extends BaseEntity implements Serializable {
     @Id
     private String id;
 

@@ -3,11 +3,12 @@ package com.xiayu.entity;
 import com.xiayu.common.BaseEntity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "t_role")
-public class Role extends BaseEntity {
+public class Role extends BaseEntity implements Serializable {
     @Id
     @Column
     private String id;

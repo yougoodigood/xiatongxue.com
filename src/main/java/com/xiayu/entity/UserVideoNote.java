@@ -1,12 +1,18 @@
 package com.xiayu.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.xiayu.common.BaseEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "t_user_video_note")
-public class UserVideoNote extends BaseEntity {
+@Setter
+@Getter
+public class UserVideoNote extends BaseEntity implements Serializable {
     @Id
     private String id;
 
@@ -21,35 +27,14 @@ public class UserVideoNote extends BaseEntity {
     @Column
     private String noteContent;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
+    @JsonBackReference
     public User getUser() {
         return user;
     }
 
+    @JsonBackReference
     public void setUser(User user) {
         this.user = user;
     }
 
-    public String getNoteContent() {
-        return noteContent;
-    }
-
-    public void setNoteContent(String noteContent) {
-        this.noteContent = noteContent;
-    }
-
-    public Video getVideo() {
-        return video;
-    }
-
-    public void setVideo(Video video) {
-        this.video = video;
-    }
 }

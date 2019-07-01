@@ -1,23 +1,29 @@
 package com.xiayu.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.xiayu.common.BaseEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 
 @Entity
+@Setter
+@Getter
 @Table(name = "t_user")
-public class User extends BaseEntity {
+public class User extends BaseEntity implements Serializable {
     @Id
     private String id;
 
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false,fetch = FetchType.LAZY)
     @JoinColumn(name = "user_class_id")
     private UserClass userClass;
 
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false,fetch = FetchType.LAZY)
     @JoinColumn(name = "user_group_id")
     private UserGroup userGroup;
     @Column
@@ -58,171 +64,24 @@ public class User extends BaseEntity {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserDownload> userDownloads;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public int getUserNumber() {
-        return userNumber;
-    }
-
-    public void setUserNumber(int userNumber) {
-        this.userNumber = userNumber;
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public String getLoginName() {
-        return loginName;
-    }
-
-    public void setLoginName(String loginName) {
-        this.loginName = loginName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
-
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public boolean isPhoneChecked() {
-        return isPhoneChecked;
-    }
-
-    public void setPhoneChecked(boolean phoneChecked) {
-        isPhoneChecked = phoneChecked;
-    }
-
-    public boolean isEmailChecked() {
-        return isEmailChecked;
-    }
-
-    public void setEmailChecked(boolean emailChecked) {
-        isEmailChecked = emailChecked;
-    }
-
-    public String getPicture() {
-        return picture;
-    }
-
-    public void setPicture(String picture) {
-        this.picture = picture;
-    }
-
+    @JsonBackReference
     public UserClass getUserClass() {
         return userClass;
     }
 
+    @JsonBackReference
     public void setUserClass(UserClass userClass) {
         this.userClass = userClass;
     }
 
+    @JsonBackReference
     public UserGroup getUserGroup() {
         return userGroup;
     }
 
+    @JsonBackReference
     public void setUserGroup(UserGroup userGroup) {
         this.userGroup = userGroup;
     }
 
-    public List<UserLogin> getUserLogins() {
-        return userLogins;
-    }
-
-    public void setUserLogins(List<UserLogin> userLogins) {
-        this.userLogins = userLogins;
-    }
-
-    public List<FileComment> getFileComments() {
-        return fileComments;
-    }
-
-    public void setFileComments(List<FileComment> fileComments) {
-        this.fileComments = fileComments;
-    }
-
-    public List<UserLikeComment> getUserLikeComments() {
-        return userLikeComments;
-    }
-
-    public void setUserLikeComments(List<UserLikeComment> userLikeComments) {
-        this.userLikeComments = userLikeComments;
-    }
-
-    public List<FileSuggestion> getFileSuggestions() {
-        return fileSuggestions;
-    }
-
-    public void setFileSuggestions(List<FileSuggestion> fileSuggestions) {
-        this.fileSuggestions = fileSuggestions;
-    }
-
-    public List<UserVideoNote> getUserVideoNotes() {
-        return userVideoNotes;
-    }
-
-    public void setUserVideoNotes(List<UserVideoNote> userVideoNotes) {
-        this.userVideoNotes = userVideoNotes;
-    }
-
-    public List<RealtimeComments> getRealtimeComments() {
-        return realtimeComments;
-    }
-
-    public void setRealtimeComments(List<RealtimeComments> realtimeComments) {
-        this.realtimeComments = realtimeComments;
-    }
-
-    public List<UserDownload> getUserDownloads() {
-        return userDownloads;
-    }
-
-    public void setUserDownloads(List<UserDownload> userDownloads) {
-        this.userDownloads = userDownloads;
-    }
 }

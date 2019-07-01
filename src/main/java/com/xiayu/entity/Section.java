@@ -1,11 +1,14 @@
 package com.xiayu.entity;
 
+import com.xiayu.common.BaseEntity;
+
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "t_section")
-public class Section {
+public class Section extends BaseEntity implements Serializable {
     @Id
     private String id;
 

@@ -4,10 +4,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
+@Setter
+@Getter
 @MappedSuperclass
-public class BaseEntity {
+public class BaseEntity implements Serializable {
     @Column
     String createId;
     @Column
@@ -20,36 +23,4 @@ public class BaseEntity {
     Date updateTime;
     @Column
     boolean delflag;
-
-    public String getCreateId() {
-        return createId;
-    }
-
-    public void setCreateId(String createId) {
-        this.createId = createId;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public String getUpdateId() {
-        return updateId;
-    }
-
-    public void setUpdateId(String updateId) {
-        this.updateId = updateId;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
 }

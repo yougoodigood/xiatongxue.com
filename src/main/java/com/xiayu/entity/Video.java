@@ -3,11 +3,12 @@ package com.xiayu.entity;
 import com.xiayu.common.BaseEntity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "t_video")
-public class Video extends BaseEntity {
+public class Video extends BaseEntity implements Serializable {
     @Id
     private String id;
 

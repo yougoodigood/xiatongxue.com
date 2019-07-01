@@ -1,13 +1,18 @@
 package com.xiayu.entity;
 
 import com.xiayu.common.BaseEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "t_country")
-public class Country extends BaseEntity {
+@Setter
+@Getter
+public class Country extends BaseEntity implements Serializable {
     @Id
     @Column
     private String id;
@@ -15,28 +20,4 @@ public class Country extends BaseEntity {
     private String countryName;
     @OneToMany(mappedBy = "country", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Province> provinces;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getCountryName() {
-        return countryName;
-    }
-
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
-    }
-
-    public List<Province> getProvinces() {
-        return provinces;
-    }
-
-    public void setProvinces(List<Province> provinces) {
-        this.provinces = provinces;
-    }
 }
