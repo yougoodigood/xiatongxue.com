@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> <configuration>
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
     <Appenders>
         <Console name="CONSOLE" target="SYSTEM_OUT">
-            <PatternLayout charset="UTF-8" pattern="%d [%-5p] %c  : %m%n" />
+            <PatternLayout charset="UTF-8" pattern="%d{YYYY-HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n" />
         </Console>
         <File name="File" fileName="./logs/course.log">
             <PatternLayout pattern="%d [%-5p] %c  : %m%n" />

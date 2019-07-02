@@ -32,13 +32,12 @@ public class UserController {
     }
 
     @RequestMapping(value = "/update",method = RequestMethod.POST)
-    public User updateUser(User user){
+    public User updateUser(@RequestBody User user){
         return userService.updateUser(user);
     }
 
     @RequestMapping(value = "/add",method = RequestMethod.PUT)
-    public User addUser(User user){
-//        return userService.addUser(user);
-        return null;
+    public User addUser(@RequestBody User user){
+        return userService.addUser(user);
     }
 }
