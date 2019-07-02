@@ -14,7 +14,6 @@ import java.util.List;
 @Getter
 public class Country extends BaseEntity implements Serializable {
     @Id
-    @Column
     private String id;
     @Column
     private String countryName;

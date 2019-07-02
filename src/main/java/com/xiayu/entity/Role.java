@@ -10,13 +10,12 @@ import java.util.List;
 @Table(name = "t_role")
 public class Role extends BaseEntity implements Serializable {
     @Id
-    @Column
     private String id;
     @Column
     private String roleName;
 
     @ManyToMany
-    @JoinTable(name = "roles_permission", joinColumns = @JoinColumn(name = "role_id"),
+    @JoinTable(name = "t_roles_permission", joinColumns = @JoinColumn(name = "role_id"),
             inverseJoinColumns = @JoinColumn(name = "permission_id"))
     private List<Permission> permissions;
 

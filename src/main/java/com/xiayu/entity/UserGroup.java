@@ -10,7 +10,6 @@ import java.util.List;
 @Table(name = "t_user_group")
 public class UserGroup extends BaseEntity implements Serializable {
     @Id
-    @Column
     private String id;
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id", referencedColumnName = "id")

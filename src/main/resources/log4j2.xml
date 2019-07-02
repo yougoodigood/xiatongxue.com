@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> <configuration>
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout charset="UTF-8" pattern="%d [%-5p] %c  : %m%n" />
+        </Console>
+        <File name="File" fileName="./logs/course.log">
+            <PatternLayout pattern="%d [%-5p] %c  : %m%n" />
+        </File>
+    </Appenders>
+    <Loggers>
+        <root level="info">
+            <AppenderRef ref="CONSOLE" />
+            <AppenderRef ref="File" />
+        </root>
+    </Loggers>
+</configuration>

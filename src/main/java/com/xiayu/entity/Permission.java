@@ -14,7 +14,6 @@ import java.util.List;
 @Table(name = "t_permission")
 public class Permission extends BaseEntity implements Serializable {
     @Id
-    @Column
     private String id;
     @Column
     private String permissionName;

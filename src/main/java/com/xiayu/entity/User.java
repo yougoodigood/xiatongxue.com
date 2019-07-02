@@ -74,12 +74,12 @@ public class User extends BaseEntity implements Serializable {
         this.userClass = userClass;
     }
 
-    @JsonBackReference
+//    @JsonBackReference
     public UserGroup getUserGroup() {
         return userGroup;
     }
 
-    @JsonBackReference
+//    @JsonBackReference
     public void setUserGroup(UserGroup userGroup) {
         this.userGroup = userGroup;
     }

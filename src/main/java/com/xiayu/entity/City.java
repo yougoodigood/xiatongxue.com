@@ -13,7 +13,6 @@ import java.io.Serializable;
 @Getter
 public class City extends BaseEntity implements Serializable {
     @Id
-    @Column
     private String id;
     @Column
     private String cityName;
