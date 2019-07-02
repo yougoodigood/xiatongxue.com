@@ -26,6 +26,12 @@ public class UserController {
         return userList;
     }
 
+    @RequestMapping(value = "/findById",method = RequestMethod.GET)
+    @ResponseBody
+    public User findById(@RequestParam(value = "id") String id){
+        return userService.findById(id).get();
+    }
+
     @RequestMapping(value = "/delete",method = RequestMethod.DELETE)
     public User deleteUser(@RequestBody User user){
         return userService.deleteUser(user);

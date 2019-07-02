@@ -1,9 +1,12 @@
 package com.xiayu.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.xiayu.common.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -15,15 +18,16 @@ import java.util.List;
 @Setter
 @Getter
 @Table(name = "t_user")
+@Cacheable
 public class User extends BaseEntity implements Serializable {
     @Id
     private String id;
 
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false,fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_class_id")
     private UserClass userClass;
 
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false,fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_group_id")
     private UserGroup userGroup;
     @Column
@@ -49,20 +53,62 @@ public class User extends BaseEntity implements Serializable {
     @Column
     private String picture;
 
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserLogin> userLogins;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<FileComment> fileComments;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserLikeComment> userLikeComments;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<FileSuggestion> fileSuggestions;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserVideoNote> userVideoNotes;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<RealtimeComments> realtimeComments;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserDownload> userDownloads;
+
+    @JsonIgnore
+    public List<UserLogin> getUserLogins() {
+        return userLogins;
+    }
+
+    @JsonIgnore
+    public List<FileComment> getFileComments() {
+        return fileComments;
+    }
+
+    @JsonIgnore
+    public List<UserLikeComment> getUserLikeComments() {
+        return userLikeComments;
+    }
+
+    @JsonIgnore
+    public List<FileSuggestion> getFileSuggestions() {
+        return fileSuggestions;
+    }
+
+    @JsonIgnore
+    public List<UserVideoNote> getUserVideoNotes() {
+        return userVideoNotes;
+    }
+
+    @JsonIgnore
+    public List<RealtimeComments> getRealtimeComments() {
+        return realtimeComments;
+    }
+
+    @JsonIgnore
+    public List<UserDownload> getUserDownloads() {
+        return userDownloads;
+    }
 
     @JsonBackReference
     public UserClass getUserClass() {
@@ -74,12 +120,12 @@ public class User extends BaseEntity implements Serializable {
         this.userClass = userClass;
     }
 
-//    @JsonBackReference
+    @JsonBackReference
     public UserGroup getUserGroup() {
         return userGroup;
     }
 
-//    @JsonBackReference
+    @JsonBackReference
     public void setUserGroup(UserGroup userGroup) {
         this.userGroup = userGroup;
     }
