@@ -1,5 +1,6 @@
 package com.xiayu.controller;
 
+import com.xiayu.common.response.UserResponse;
 import com.xiayu.entity.User;
 import com.xiayu.service.UserService;
 import org.slf4j.Logger;
@@ -28,8 +29,8 @@ public class UserController {
 
     @RequestMapping(value = "/findById",method = RequestMethod.GET)
     @ResponseBody
-    public User findById(@RequestParam(value = "id") String id){
-        return userService.findById(id).get();
+    public UserResponse findById(@RequestParam(value = "id") String id){
+        return userService.findById(id);
     }
 
     @RequestMapping(value = "/delete",method = RequestMethod.DELETE)

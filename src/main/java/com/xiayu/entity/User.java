@@ -1,12 +1,8 @@
 package com.xiayu.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.xiayu.common.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -19,6 +15,7 @@ import java.util.List;
 @Getter
 @Table(name = "t_user")
 @Cacheable
+//@JsonIgnoreProperties(value={"hibernateLazyInitializer","handler","fieldHandler"})
 public class User extends BaseEntity implements Serializable {
     @Id
     private String id;
@@ -74,60 +71,4 @@ public class User extends BaseEntity implements Serializable {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserDownload> userDownloads;
-
-    @JsonIgnore
-    public List<UserLogin> getUserLogins() {
-        return userLogins;
-    }
-
-    @JsonIgnore
-    public List<FileComment> getFileComments() {
-        return fileComments;
-    }
-
-    @JsonIgnore
-    public List<UserLikeComment> getUserLikeComments() {
-        return userLikeComments;
-    }
-
-    @JsonIgnore
-    public List<FileSuggestion> getFileSuggestions() {
-        return fileSuggestions;
-    }
-
-    @JsonIgnore
-    public List<UserVideoNote> getUserVideoNotes() {
-        return userVideoNotes;
-    }
-
-    @JsonIgnore
-    public List<RealtimeComments> getRealtimeComments() {
-        return realtimeComments;
-    }
-
-    @JsonIgnore
-    public List<UserDownload> getUserDownloads() {
-        return userDownloads;
-    }
-
-    @JsonBackReference
-    public UserClass getUserClass() {
-        return userClass;
-    }
-
-    @JsonBackReference
-    public void setUserClass(UserClass userClass) {
-        this.userClass = userClass;
-    }
-
-    @JsonBackReference
-    public UserGroup getUserGroup() {
-        return userGroup;
-    }
-
-    @JsonBackReference
-    public void setUserGroup(UserGroup userGroup) {
-        this.userGroup = userGroup;
-    }
-
 }

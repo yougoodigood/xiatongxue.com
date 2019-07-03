@@ -57,8 +57,8 @@ public class ExecuteSQLTest {
 //        List<User> users = userService.getUserList();
 //        logger.info("finished");
 
-        Optional<User> user = userService.findById("1");
-        UserClass userClass = user.get().getUserClass();
-        logger.info("finished");
+//        Optional<User> user = userService.findById("1");
+//        UserClass userClass = user.get().getUserClass();
+//        logger.info("finished");
     }
 }

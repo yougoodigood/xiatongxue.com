@@ -1,5 +1,6 @@
 package com.xiayu.service;
 
+import com.xiayu.common.response.UserResponse;
 import com.xiayu.entity.User;
 import com.xiayu.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,13 @@ public class UserServiceImpl implements UserService {
     UserRepository userRepository;
 
     @Override
-    public Optional<User> findById(String id) {
-        return userRepository.findById(id);
+    public UserResponse findById(String id) {
+        User user = userRepository.findById(id).get();
+        UserResponse userResponse = new UserResponse();
+        userResponse.setId(user.getId());
+        userResponse.setAge(user.getAge());
+        userResponse.setBirthday(user.getBirthday());
+        return userResponse;
     }
 
     @Override
