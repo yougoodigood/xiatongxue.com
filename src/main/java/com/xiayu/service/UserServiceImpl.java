@@ -10,8 +10,14 @@ import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * UserServiceImpl
+ *
+ * @author  sunliqian
+ * Date 2019/7/2
+ */
 @Service
-@Transactional
+@Transactional(rollbackOn = Exception.class)
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -42,6 +48,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
+    @Override
     public User addUser(User user){
         return userRepository.save(user);
     }
