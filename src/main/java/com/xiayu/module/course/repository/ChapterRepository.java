@@ -1,4 +1,4 @@
-package com.xiayu.module.user.repository;
+package com.xiayu.module.course.repository;
 
 import com.xiayu.module.course.entity.Chapter;
 import org.springframework.data.jpa.repository.JpaRepository;

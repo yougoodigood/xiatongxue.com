@@ -1,7 +1,7 @@
 package com.xiayu.module.user.service.serviceimpl;
 
 import com.xiayu.module.permission.entity.Role;
-import com.xiayu.module.user.repository.RoleRepository;
+import com.xiayu.module.permission.repository.RoleRepository;
 import com.xiayu.module.user.service.RoleService;
 import com.xiayu.module.user.vo.RoleVO;
 import org.springframework.beans.factory.annotation.Autowired;

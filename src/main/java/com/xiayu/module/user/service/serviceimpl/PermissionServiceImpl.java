@@ -3,7 +3,7 @@ package com.xiayu.module.user.service.serviceimpl;
 import com.xiayu.common.vo.PaginationVO;
 import com.xiayu.module.permission.entity.Permission;
 import com.xiayu.enumeration.ResourceTypeEnum;
-import com.xiayu.module.user.repository.PermissionRepository;
+import com.xiayu.module.permission.repository.PermissionRepository;
 import com.xiayu.module.user.service.PermissionService;
 import com.xiayu.module.user.vo.PermissionVO;
 import org.slf4j.Logger;

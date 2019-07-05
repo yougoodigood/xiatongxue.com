@@ -1,4 +1,4 @@
-package com.xiayu.module.user.repository;
+package com.xiayu.module.permission.repository;
 
 import com.xiayu.common.repository.BaseRepository;
 import com.xiayu.module.permission.entity.Permission;
