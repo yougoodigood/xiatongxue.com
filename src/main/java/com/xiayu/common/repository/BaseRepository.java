@@ -7,6 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 
 @NoRepositoryBean
-public  interface BaseRepository<T extends BaseEntity,S> extends JpaRepository<T,S>, CrudRepository<T,S>, JpaSpecificationExecutor<T> {
+public  interface BaseRepository<T extends BaseEntity> extends JpaRepository<T,String>, CrudRepository<T,String>, JpaSpecificationExecutor<T> {
 
 }

@@ -9,7 +9,7 @@ import org.springframework.data.domain.Pageable;
 import java.util.Optional;
 
 @Repository
-public interface PermissionRepository extends BaseRepository<Permission,String> {
+public interface PermissionRepository extends BaseRepository<Permission> {
 
     @Override
     Page<Permission> findAll(Specification<Permission> specificationec, Pageable pageable);

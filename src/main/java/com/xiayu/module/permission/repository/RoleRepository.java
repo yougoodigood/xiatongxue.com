@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface RoleRepository extends BaseRepository<Role,String> {
+public interface RoleRepository extends BaseRepository<Role> {
 
     List<Role> findByDelflagIsFalse();
 
