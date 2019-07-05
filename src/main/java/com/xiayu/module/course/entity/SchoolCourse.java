@@ -11,6 +11,7 @@ import java.io.Serializable;
 @Table(name = "t_school_course")
 public class SchoolCourse extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = 4368208475450611977L;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "school_id")
     private School school;

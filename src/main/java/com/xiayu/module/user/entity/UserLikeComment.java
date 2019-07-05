@@ -13,6 +13,7 @@ import java.io.Serializable;
 @Table(name = "t_user_like_comment")
 public class UserLikeComment extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = -3169674533156113469L;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "user_id")
     private User user;

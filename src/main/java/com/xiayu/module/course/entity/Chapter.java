@@ -13,6 +13,7 @@ import java.util.List;
 @Setter
 @Getter
 public class Chapter extends BaseEntity implements Serializable {
+    private static final long serialVersionUID = -3644881085905239138L;
     @Column
     private String chapterNumber;
 

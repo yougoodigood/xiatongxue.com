@@ -14,6 +14,7 @@ import java.util.List;
 @Getter
 @Table(name = "t_permission")
 public class Permission extends BaseEntity implements Serializable {
+    private static final long serialVersionUID = 5543788854321691866L;
     @Column
     private String permissionName;
     @Column

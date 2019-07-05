@@ -13,6 +13,7 @@ import java.util.List;
 @Getter
 @Table(name = "t_province")
 public class Province extends BaseEntity implements Serializable {
+    private static final long serialVersionUID = -6148495682818950978L;
     @Column
     private String provinceName;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)

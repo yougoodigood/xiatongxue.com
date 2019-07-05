@@ -1,6 +1,6 @@
 package com.xiayu.module.user.repository;
 
-import com.xiayu.module.video.VideoSegmentInfo;
+import com.xiayu.module.video.entity.VideoSegmentInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

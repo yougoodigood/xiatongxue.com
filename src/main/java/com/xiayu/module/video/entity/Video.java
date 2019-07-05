@@ -1,4 +1,4 @@
-package com.xiayu.module.video;
+package com.xiayu.module.video.entity;
 
 import com.xiayu.common.entity.BaseEntity;
 
@@ -10,6 +10,7 @@ import java.util.List;
 @Table(name = "t_video")
 public class Video extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = 8052733673642398489L;
     @Column
     private String videoNumber;
 

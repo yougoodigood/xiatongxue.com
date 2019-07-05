@@ -13,6 +13,7 @@ import java.util.List;
 @Getter
 @Table(name = "t_project_class")
 public class ProjectClass extends BaseEntity implements Serializable {
+    private static final long serialVersionUID = -6866262652510826278L;
     @Column
     private String projectName;
     @Column

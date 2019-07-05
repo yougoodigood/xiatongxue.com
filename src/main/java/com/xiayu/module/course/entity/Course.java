@@ -14,6 +14,7 @@ import java.util.List;
 @Getter
 public class Course extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = -8491028728831497735L;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "project_class_id")
     private ProjectClass projectClass;

@@ -15,6 +15,7 @@ import java.io.Serializable;
 @Table(name = "t_file_suggestion")
 public class FileSuggestion extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = 5680182332414504024L;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "user_id")
     private User user;

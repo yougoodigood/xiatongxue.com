@@ -11,6 +11,7 @@ import java.io.Serializable;
 @Table(name = "t_section")
 public class Section extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = -3288237623211438541L;
     @Column
     private String sectionNumber;
 

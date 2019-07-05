@@ -13,6 +13,7 @@ import java.util.List;
 @Setter
 @Getter
 public class Role extends BaseEntity implements Serializable {
+    private static final long serialVersionUID = 1049186231793257493L;
     @Column
     private String roleName;
 

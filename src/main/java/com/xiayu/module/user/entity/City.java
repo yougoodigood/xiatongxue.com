@@ -12,6 +12,7 @@ import java.io.Serializable;
 @Setter
 @Getter
 public class City extends BaseEntity implements Serializable {
+    private static final long serialVersionUID = 8480557837495107149L;
     @Column
     private String cityName;
 

@@ -14,6 +14,7 @@ import java.util.List;
 @Table(name = "t_file")
 public class ResourceFile extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = -2776696054089199166L;
     @Column
     private String parentId;
 

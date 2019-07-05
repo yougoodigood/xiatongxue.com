@@ -2,7 +2,7 @@ package com.xiayu.module.user.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.xiayu.common.entity.BaseEntity;
-import com.xiayu.module.video.Video;
+import com.xiayu.module.video.entity.Video;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,6 +15,7 @@ import java.io.Serializable;
 @Getter
 public class UserVideoNote extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = 6965027504140541588L;
     @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
     @JoinColumn(name="user_id")
     private User user;

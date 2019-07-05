@@ -12,6 +12,7 @@ import java.util.List;
 @Data
 @Table(name = "t_user_group")
 public class UserGroup extends BaseEntity implements Serializable {
+    private static final long serialVersionUID = -5603792053474838504L;
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id", referencedColumnName = "id")
     private Role role;

@@ -13,6 +13,7 @@ import java.io.Serializable;
 @Getter
 @Table(name = "t_user_login")
 public class UserLogin extends BaseEntity implements Serializable {
+    private static final long serialVersionUID = -8926676479970243622L;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "user_id")
     private User user;

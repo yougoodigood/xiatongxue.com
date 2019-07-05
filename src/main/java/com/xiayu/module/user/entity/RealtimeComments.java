@@ -10,6 +10,7 @@ import java.io.Serializable;
 @Table(name = "t_realtime_comments")
 public class RealtimeComments extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = 1799950508575771644L;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "user_id")
     private User user;

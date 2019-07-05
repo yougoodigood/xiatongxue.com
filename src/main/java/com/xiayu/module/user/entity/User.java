@@ -19,6 +19,7 @@ import java.util.List;
 @Cacheable
 public class User extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = -7368603872637421179L;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_class_id")
     private UserClass userClass;

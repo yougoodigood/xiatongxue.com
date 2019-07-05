@@ -12,6 +12,7 @@ import java.util.List;
 @Table(name = "t_school")
 public class School extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = 6767431358608023794L;
     @Column
     private String schoolName;
 

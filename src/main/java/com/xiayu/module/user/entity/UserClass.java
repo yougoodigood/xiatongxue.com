@@ -11,6 +11,7 @@ import java.util.List;
 @Data
 @Table(name = "t_user_class")
 public class UserClass extends BaseEntity implements Serializable {
+    private static final long serialVersionUID = -246863239520460602L;
     @Column
     private String className;
     @Column

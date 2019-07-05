@@ -15,6 +15,7 @@ import java.io.Serializable;
 @Getter
 public class FileComment extends BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = 4573558360943527403L;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "file_id")
     private ResourceFile resourceFile;
