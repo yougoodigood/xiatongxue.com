@@ -12,8 +12,6 @@ import java.io.Serializable;
 @Setter
 @Getter
 public class City extends BaseEntity implements Serializable {
-    @Id
-    private String id;
     @Column
     private String cityName;
 

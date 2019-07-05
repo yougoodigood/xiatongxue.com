@@ -9,8 +9,6 @@ import java.io.Serializable;
 @Entity
 @Table(name = "t_realtime_comments")
 public class RealtimeComments extends BaseEntity implements Serializable {
-    @Id
-    private String id;
 
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "user_id")

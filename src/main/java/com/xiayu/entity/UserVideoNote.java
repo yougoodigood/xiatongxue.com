@@ -13,8 +13,6 @@ import java.io.Serializable;
 @Setter
 @Getter
 public class UserVideoNote extends BaseEntity implements Serializable {
-    @Id
-    private String id;
 
     @ManyToOne(cascade={CascadeType.MERGE,CascadeType.REFRESH},optional=false)
     @JoinColumn(name="user_id")

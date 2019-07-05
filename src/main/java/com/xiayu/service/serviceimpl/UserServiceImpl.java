@@ -1,14 +1,14 @@
-package com.xiayu.service;
+package com.xiayu.service.serviceimpl;
 
-import com.xiayu.common.response.UserResponse;
 import com.xiayu.entity.User;
 import com.xiayu.repository.UserRepository;
+import com.xiayu.service.UserService;
+import com.xiayu.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * UserServiceImpl
@@ -24,18 +24,19 @@ public class UserServiceImpl implements UserService {
     UserRepository userRepository;
 
     @Override
-    public UserResponse findById(String id) {
+    public UserVO findById(String id) {
         User user = userRepository.findById(id).get();
-        UserResponse userResponse = new UserResponse();
-        userResponse.setId(user.getId());
-        userResponse.setAge(user.getAge());
-        userResponse.setBirthday(user.getBirthday());
-        return userResponse;
+        UserVO userVO = new UserVO();
+        userVO.setId(user.getId());
+        userVO.setAge(user.getAge());
+        userVO.setBirthday(user.getBirthday());
+        return userVO;
     }
 
     @Override
-    public List<User> getUserList() {
-        return userRepository.findAll();
+    public List<UserVO> getUserList() {
+//        return userRepository.findAll();
+        return null;
     }
 
     @Override

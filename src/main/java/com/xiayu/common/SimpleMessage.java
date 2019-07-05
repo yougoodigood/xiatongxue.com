@@ -1,0 +1,27 @@
+package com.xiayu.common;
+
+import lombok.Getter;
+import lombok.Setter;
+
+/**
+ * @Classname SimpleMessage
+ * @Description
+ * @Author hello
+ * @Date 2019/7/4 15:49
+ * @Version 1.0
+ **/
+@Getter
+@Setter
+public class SimpleMessage extends Message{
+
+    private Object result;
+
+    public SimpleMessage(Object result){
+        this.result = result;
+    }
+
+    public SimpleMessage(Object result,int code,String message,boolean success){
+        super(code,message,success);
+        this.result = result;
+    }
+}

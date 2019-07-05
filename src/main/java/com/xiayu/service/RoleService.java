@@ -1,13 +1,13 @@
 package com.xiayu.service;
 
-import com.xiayu.common.response.RoleResponse;
+import com.xiayu.vo.RoleVO;
 
 import java.util.List;
 
 public interface RoleService {
-    List<RoleResponse> getRoleList();
+    List<RoleVO> getRoleList();
 
-    RoleResponse getRole();
+    RoleVO getRole();
 
     boolean addRole();
 

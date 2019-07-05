@@ -1,15 +1,15 @@
 package com.xiayu.service;
 
-import com.xiayu.common.response.UserResponse;
 import com.xiayu.entity.User;
+import com.xiayu.vo.UserVO;
 
 import java.util.List;
 
 public interface UserService {
 
-    UserResponse findById(String id);
+    UserVO findById(String id);
 
-    List<User> getUserList();
+    List<UserVO> getUserList();
 
     User deleteUser(User user);
 

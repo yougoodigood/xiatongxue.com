@@ -13,9 +13,6 @@ import java.util.List;
 @Setter
 @Getter
 public class Chapter extends BaseEntity implements Serializable {
-    @Id
-    private String id;
-
     @Column
     private String chapterNumber;
 

@@ -13,8 +13,6 @@ import java.io.Serializable;
 @Getter
 @Table(name = "t_user_login")
 public class UserLogin extends BaseEntity implements Serializable {
-    @Id
-    private String id;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "user_id")
     private User user;
@@ -28,14 +26,6 @@ public class UserLogin extends BaseEntity implements Serializable {
     private String identifyCode;//验证码
     @Column
     private String loginDomain;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     @JsonBackReference
     public User getUser() {

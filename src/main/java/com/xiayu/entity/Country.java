@@ -13,8 +13,6 @@ import java.util.List;
 @Setter
 @Getter
 public class Country extends BaseEntity implements Serializable {
-    @Id
-    private String id;
     @Column
     private String countryName;
     @OneToMany(mappedBy = "country", cascade = CascadeType.ALL, fetch = FetchType.LAZY)

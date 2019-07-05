@@ -17,8 +17,6 @@ import java.util.List;
 @Cacheable
 //@JsonIgnoreProperties(value={"hibernateLazyInitializer","handler","fieldHandler"})
 public class User extends BaseEntity implements Serializable {
-    @Id
-    private String id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_class_id")

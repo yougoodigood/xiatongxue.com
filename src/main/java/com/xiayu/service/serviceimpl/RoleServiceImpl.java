@@ -1,12 +1,13 @@
-package com.xiayu.service;
+package com.xiayu.service.serviceimpl;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
-import com.xiayu.common.response.RoleResponse;
 import com.xiayu.entity.Role;
 import com.xiayu.repository.RoleRepository;
+import com.xiayu.service.RoleService;
+import com.xiayu.vo.RoleVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,34 +19,36 @@ import java.util.List;
  * @Version 1.0
  **/
 @Service
-public class RoleServiceImpl implements RoleService{
+@Transactional
+public class RoleServiceImpl implements RoleService {
 
     @Autowired
     private RoleRepository roleRepository;
 
     @Override
-    public List<RoleResponse> getRoleList() {
+    public List<RoleVO> getRoleList() {
         List<Role> roles = roleRepository.findByDelflagIsFalse();
-        List<RoleResponse> roleResponses = new ArrayList<>();
+        List<RoleVO> roleResponses = new ArrayList<>();
         roles.stream().forEach(role -> {
-            RoleResponse roleResponse = new RoleResponse();
-            roleResponse.setId(role.getId());
-            roleResponse.setRoleName(role.getRoleName());
-            roleResponse.setCreateTime(role.getCreateTime());
-            roleResponse.setUpdateId(role.getUpdateId());
-            roleResponse.setUpdateTime(role.getUpdateTime());
-            roleResponses.add(roleResponse);
+            RoleVO roleVO = new RoleVO();
+            roleVO.setId(role.getId());
+            roleVO.setRoleName(role.getRoleName());
+            roleVO.setCreateTime(role.getCreateTime());
+            roleVO.setUpdateId(role.getUpdateId());
+            roleVO.setUpdateTime(role.getUpdateTime());
+            roleResponses.add(roleVO);
         });
         return roleResponses;
     }
 
     @Override
-    public RoleResponse getRole() {
+    public RoleVO getRole() {
         return null;
     }
 
     @Override
     public boolean addRole() {
+
         return false;
     }
 

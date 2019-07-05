@@ -13,8 +13,6 @@ import java.util.List;
 @Setter
 @Getter
 public class Course extends BaseEntity implements Serializable {
-    @Id
-    private String id;
 
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "project_class_id")

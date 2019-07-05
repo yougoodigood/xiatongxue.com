@@ -13,8 +13,6 @@ import java.io.Serializable;
 @Getter
 @Table(name = "t_file_suggestion")
 public class FileSuggestion extends BaseEntity implements Serializable {
-    @Id
-    private String id;
 
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "user_id")

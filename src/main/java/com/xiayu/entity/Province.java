@@ -13,8 +13,6 @@ import java.util.List;
 @Getter
 @Table(name = "t_province")
 public class Province extends BaseEntity implements Serializable {
-    @Id
-    private String id;
     @Column
     private String provinceName;
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)

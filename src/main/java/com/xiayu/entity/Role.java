@@ -13,8 +13,6 @@ import java.util.List;
 @Setter
 @Getter
 public class Role extends BaseEntity implements Serializable {
-    @Id
-    private String id;
     @Column
     private String roleName;
 

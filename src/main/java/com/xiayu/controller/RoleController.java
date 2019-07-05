@@ -1,11 +1,8 @@
 package com.xiayu.controller;
 
 import com.xiayu.common.BaseController;
-import com.xiayu.common.response.RoleResponse;
-import com.xiayu.common.response.UserResponse;
-import com.xiayu.entity.User;
 import com.xiayu.service.RoleService;
-import com.xiayu.service.UserService;
+import com.xiayu.vo.RoleVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +19,7 @@ public class RoleController extends BaseController {
     RoleService roleService;
 
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    @ResponseBody
-    public List<RoleResponse> getRoleList(){
+    public List<RoleVO> getRoleList(){
         return roleService.getRoleList();
     }
 }

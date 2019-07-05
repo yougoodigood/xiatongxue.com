@@ -1,8 +1,8 @@
 package com.xiayu.controller;
 
-import com.xiayu.common.response.UserResponse;
 import com.xiayu.entity.User;
 import com.xiayu.service.UserService;
+import com.xiayu.vo.UserVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,16 +20,14 @@ public class UserController {
     UserService userService;
 
     @RequestMapping(value = "/",method = RequestMethod.GET)
-    @ResponseBody
-    public List<User> getUserList(){
-        List<User> userList = userService.getUserList();
+    public List<UserVO> getUserList(){
+        List<UserVO> userList = userService.getUserList();
         logger.info("call getUserList interface");
         return userList;
     }
 
     @RequestMapping(value = "/findById",method = RequestMethod.GET)
-    @ResponseBody
-    public UserResponse findById(@RequestParam(value = "id") String id){
+    public UserVO findById(@RequestParam(value = "id") String id){
         return userService.findById(id);
     }
 
