@@ -21,9 +21,10 @@ public class UserVO extends BaseVO {
     private String loginName;
     private String password;
     private int age;
-    private Date birthday;
+    private String birthday;
     private String telephone;
     private String email;
+    private String phone;
     private boolean isPhoneChecked;
     private boolean isEmailChecked;
     private String picture;

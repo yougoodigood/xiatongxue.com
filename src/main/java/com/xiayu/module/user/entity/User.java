@@ -5,6 +5,7 @@ import com.xiayu.module.file.entity.FileComment;
 import com.xiayu.module.file.entity.FileSuggestion;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.context.annotation.Configuration;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -38,7 +39,7 @@ public class User extends BaseEntity implements Serializable {
     @Column
     private int age;
     @Column
-    private Date birthday;
+    private String birthday;
     @Column
     private String telephone;
     @Column
@@ -49,6 +50,8 @@ public class User extends BaseEntity implements Serializable {
     private boolean isEmailChecked;
     @Column
     private String picture;
+    @Column
+    private String phone;
 
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)

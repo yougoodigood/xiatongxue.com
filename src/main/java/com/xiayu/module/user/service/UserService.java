@@ -7,13 +7,13 @@ import java.util.List;
 
 public interface UserService {
 
-    UserVO findById(String id);
+    UserVO findById(String id) throws Exception;
 
-    List<UserVO> getUserList();
+    List<UserVO> getUserList() throws Exception;
 
-    User deleteUser(User user);
+    User deleteUser(User user) throws Exception;
 
-    User updateUser(User user);
+    User updateUser(User user) throws Exception;
 
-    User addUser(User user);
+    User addUser(UserVO userVO) throws Exception;
 }
