@@ -21,18 +21,25 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    private static String LOGINED_FLAG = "LOGINED_FLAG";
+
+    private static String LOGINED_SUCCESS = "LOGINED_SUCCESS";
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         logger.info("access url info:" + request.getRequestURI());
         String url = request.getRequestURI();
-        if (!"/user/login".equals(url)){
-            HttpSession session = request.getSession(false);
-            if (session == null){
-                logger.info("session 为 null");
+        HttpSession session = request.getSession(false);
+        if ("/user/login".equals(url) || "/user/add".equals(url)){
+            return true;
+        }else {
+            if (session == null || session.getAttribute(LOGINED_FLAG) != LOGINED_SUCCESS ){
+                logger.info("session 为 null,或者未登录");
                 response.sendRedirect("/user/login");
                 return false;
+            }else {
+                return true;
             }
         }
-        return true;
     }
 }

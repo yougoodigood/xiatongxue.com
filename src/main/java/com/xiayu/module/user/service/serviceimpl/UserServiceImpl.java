@@ -62,14 +62,25 @@ public class UserServiceImpl implements UserService {
     @Override
     public User addUser(UserVO userVO) throws Exception{
         User user = new User();
+        user.setLoginName(userVO.getLoginName());
         user.setNickname(userVO.getNickname());
         user.setPassword(MD5.md5(userVO.getPassword()));
         user.setEmail(userVO.getEmail());
         user.setPicture(userVO.getPicture());
         user.setBirthday(userVO.getBirthday());
         user.setAge(AgeUtil.getAge(userVO.getBirthday()));
-        user.setLoginName(userVO.getLoginName());
         user.setPhone(userVO.getPhone());
         return userRepository.save(user);
+    }
+
+    public UserVO findByDelflagIsFalseAndLoginName(String loginName){
+        List<User> users = userRepository.findByDelflagIsFalseAndLoginName(loginName);
+        UserVO userVO = null;
+        if (users.size() != 0){
+            userVO = new UserVO();
+            userVO.setLoginName(users.get(0).getLoginName());
+            userVO.setPassword(users.get(0).getPassword());
+        }
+        return userVO;
     }
 }

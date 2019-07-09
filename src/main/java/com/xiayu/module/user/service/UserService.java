@@ -16,4 +16,6 @@ public interface UserService {
     User updateUser(User user) throws Exception;
 
     User addUser(UserVO userVO) throws Exception;
+
+    UserVO findByDelflagIsFalseAndLoginName(String loginName);
 }

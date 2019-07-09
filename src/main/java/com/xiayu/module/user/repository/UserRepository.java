@@ -10,6 +10,8 @@ import java.util.List;
 public interface UserRepository extends BaseRepository<User> {
     List<User> findByNicknameLike(String userName);
 
+    List<User> findByDelflagIsFalseAndLoginName(String loginName);
+
     List<User> getUsersByDelflagIsFalse();
 
     @Override
