@@ -30,14 +30,14 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         logger.info("access url info:" + request.getRequestURI());
         String url = request.getRequestURI();
         HttpSession session = request.getSession(false);
-        if ("/user/login".equals(url) || "/user/add".equals(url)){
+        if ("/user/login".equals(url) || "/user/add".equals(url) || "/user/changeVerifiedCode".equals(url) || "/user/toLogin".equals(url) || "/error".equals(url)) {
             return true;
-        }else {
-            if (session == null || session.getAttribute(LOGINED_FLAG) != LOGINED_SUCCESS ){
+        } else {
+            if (session == null || session.getAttribute(LOGINED_FLAG) != LOGINED_SUCCESS) {
                 logger.info("session 为 null,或者未登录");
                 response.sendRedirect("/user/login");
                 return false;
-            }else {
+            } else {
                 return true;
             }
         }

@@ -101,36 +101,37 @@ public class UserController extends BaseController {
             ModelAndView modelAndView = new ModelAndView("user/login");
             return modelAndView;
         } catch (Exception e) {
+            logger.error("user login error:" + e);
+            return new ModelAndView();
         }
-        return null;
     }
 
 
-    @RequestMapping(value = "/toLogin", method = RequestMethod.GET)
-    public ModelAndView login(@RequestParam(value = "loginName") String loginName,
+    @RequestMapping(value = "/toLogin", method = RequestMethod.PUT)
+    public SimpleMessage login(@RequestParam(value = "loginName") String loginName,
                               @RequestParam(value = "loginPassword") String loginPassword,
                               @RequestParam(value = "verifiedCode") String verifiedCode,
                               HttpServletRequest request) {
-        ModelAndView modelAndView = new ModelAndView();
         try {
-            UserVO userVO = userService.findById(loginName);
+            UserVO userVO = userService.findByDelflagIsFalseAndLoginName(loginName);
+            if (userVO == null){
+                return new SimpleMessage("用户名或者密码错误",500,"loginname or password error",false);
+            }
             String password = MD5.md5(loginPassword);
-            if (userVO.getPassword().equals(password)){
-                HttpSession session = request.getSession(true);
-                session.setMaxInactiveInterval(this.maxInactiveInterval);
+            HttpSession session = request.getSession(false);
+            if (userVO.getPassword().equals(password) && session != null && verifiedCode.equals(session.getAttribute("verifiedCode"))){
                 session.setAttribute("LOGINED_FLAG", "LOGINED_SUCCESS");
-                modelAndView.setViewName("index");
+                return new SimpleMessage("登录成功",200,"login success",true);
             }else {
-                logger.error("password error when login");
-                modelAndView.setViewName("user/login");
+                return new SimpleMessage("用户名或者密码错误",500,"loginname or password error",false);
             }
         } catch (Exception e) {
             logger.info("login error");
+            return super.returnSimpleMessage(e);
         }
-        return modelAndView;
     }
 
-    @RequestMapping(value = "/changeVerification", method = RequestMethod.GET)
+    @RequestMapping(value = "/changeVerifiedCode", method = RequestMethod.GET)
     public void changeVerification(HttpServletRequest request, HttpServletResponse response) {
         try {
             response.setHeader("Cache-Control", "no-store");
