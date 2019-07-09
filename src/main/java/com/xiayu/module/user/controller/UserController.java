@@ -86,16 +86,15 @@ public class UserController extends BaseController {
     }
 
     @RequestMapping(value = "/login",method = RequestMethod.GET)
-    public SimpleMessage login(HttpServletRequest request){
+    public ModelAndView login(HttpServletRequest request,HttpServletResponse response){
         try {
-            String verifiedCode = VerificationImageUtils.generateVerifyCode(4);
             HttpSession session = request.getSession(true);
-            session.setAttribute("verifiedCode",verifiedCode.toLowerCase());
             session.setMaxInactiveInterval(this.maxInactiveInterval);
-            return new SimpleMessage("verifiedCode:" + verifiedCode + " session id: " + session.getId());
+            ModelAndView modelAndView = new ModelAndView("user/login");
+            return modelAndView;
         }catch (Exception e){
-            return super.returnSimpleMessage(e);
         }
+        return  null;
     }
 
     @RequestMapping(value = "/changeVerification",method = RequestMethod.GET)
