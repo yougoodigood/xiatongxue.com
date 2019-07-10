@@ -7,6 +7,6 @@ package com.xiayu.module.video.controller;
  * @Date 2019/7/5 18:16
  * @Version 1.0
  **/
-public class VideoSegmentInfo {
+public class VideoSegmentInfoController {
 
 }
