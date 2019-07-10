@@ -8,4 +8,5 @@ package com.xiayu.module.video.controller;
  * @Version 1.0
  **/
 public class VideoController {
+
 }

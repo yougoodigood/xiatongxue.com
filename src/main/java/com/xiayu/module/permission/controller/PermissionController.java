@@ -32,7 +32,7 @@ public class PermissionController extends BaseController {
 //    }
 
     @GetMapping(value = "/getList")
-    public ModelAndView getPermissionList(@RequestBody PaginationVO paginationVO){
+    public ModelAndView getPermissionList(PaginationVO paginationVO){
         try {
             PaginationVO result = permissionService.getPermissionList(paginationVO);
             ModelAndView modelAndView = new ModelAndView();

@@ -19,4 +19,11 @@ public class CommonController {
         modelAndView.setViewName("common/error");
         return modelAndView;
     }
+
+    @GetMapping(value = {"/index","/",""})
+    public ModelAndView index(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("index");
+        return modelAndView;
+    }
 }

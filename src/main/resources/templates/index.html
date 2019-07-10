@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- 若您需要使用Kendo UI Professional，请联系版权人获得合法的授权或许可。 -->
+
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- kendo ui css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <!--蓝鲸提供的公用样式库 -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <!-- 包括所有kendoui的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/bk/js/bk.js"></script>
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/html5shiv.min.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- 数据埋点统计 -->
+    <script src="http://magicbox.bk.tencent.com/static_api/analysis.js"></script>
+</head>
+
+<body>
+<div class="king-layout-container height100" id="layoutPanel">
+    <!--  -->
+    <div class="king-layout-main king-flexible-setting">
+        <div class="king-flexible-nav">
+            <div class="logo"></div>
+            <ul class="flexible-list">
+                <li class="king-selected-nav"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><a href="javascript:;">nav1</a></li>
+                <li><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="javascript:;">nav2</a></li>
+                <li><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="javascript:;">nav3</a></li>
+                <li><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="javascript:;">nav4</a></li>
+                <li><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="javascript:;">nav5</a></li>
+                <li><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="javascript:;">nav6</a></li>
+            </ul>
+        </div>
+        <div class="king-flexible-content king-flex-y">
+            <div class="right-layout-header">
+                <div class="navbar-container">
+                    <div class="king-layout-sider-trigger">
+                        <span class="open-icon"></span>
+                        <span class="close-icon hide"></span>
+                    </div>
+                    <div class="navbar-header pull-right">
+                        <ul class="nav item-pull-right">
+                            <li class="fr header-user">
+                                <div class="fr logout">
+                                    <span class="magic-poweroff">退出</span>
+                                </div>
+                                <div class="fr" id="magic_user">
+                                    <img class="img-rounded" src="https://magicbox.bk.tencent.com/static_api/v3/components/horizontal_nav1/images/avatar.png" alt="" class="avatar">
+                                    <a class="name" href="javascript:;">admin</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-layout-main">
+                <div class="king-breadcrumb">
+                    <span class="king-breadcrumb-link">Home</span>
+                    <span class="king-breadcrumb-separator">/</span>
+                    <span class="king-breadcrumb-link">List</span>
+                    <span class="king-breadcrumb-separator">/</span>
+                    <span class="king-breadcrumb-link">App</span>
+                </div>
+                <div class="right-layout-content">
+                    <div class="right-content-main">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th style="width: 10px">#</th>
+                                <th style="width:20%;">任务</th>
+                                <th>进度</th>
+                                <th>开发者</th>
+                                <th>结束时间</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>版本更新</td>
+                                <td>
+                                    完成
+                                </td>
+                                <td>管理员</td>
+                                <td>2015-09-20</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>数据备份</td>
+                                <td>
+                                    70%
+                                </td>
+                                <td>管理员</td>
+                                <td>2015-09-20</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>定时任务</td>
+                                <td>
+                                    未开始
+                                </td>
+                                <td>管理员</td>
+                                <td>2015-09-20</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>修复bug</td>
+                                <td>
+                                    已结束
+                                </td>
+                                <td>管理员</td>
+                                <td>2015-09-20</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="king-layout-footer"> Copyright © 2012-2017 Tencent BlueKing. All Rights Reserved. 蓝鲸智云 版权所有</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script>
+    $(".flexible-list").on("click","li",function(){
+        $(this).addClass("king-selected-nav").siblings().removeClass("king-selected-nav");
+    });
+
+    setTimeout(function(){
+        $(".king-layout-sider-trigger").unbind("click").click(function(){
+            $(".king-flexible-nav").toggleClass("king-layout-sider-collapsed");
+            $(this).children().toggleClass("hide");
+        })
+    },0)
+</script>
+</body>
+
+</html>
