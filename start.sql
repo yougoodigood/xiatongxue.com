@@ -308,9 +308,9 @@ create table t_role1
 /*==============================================================*/
 /* Table: t_role_permission                                     */
 /*==============================================================*/
-create table t_role_permission
+create table t_roles_permission
 (
-   id                   varchar(255)                   not null PRIMARY KEY,
+   id                   int                   auto_increment PRIMARY KEY ,
    t_permission_id      varchar(255)                   null,
    t_role_id            varchar(255)                   null,
    delflag              boolean                        null

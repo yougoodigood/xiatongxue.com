@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 @RequestMapping(value = "/permission")
@@ -20,18 +21,31 @@ public class PermissionController extends BaseController {
     @Autowired
     private PermissionService permissionService;
 
+//    @GetMapping(value = "/getList")
+//    public PaginationMessage getPermissionList(PaginationVO paginationVO){
+//        try {
+//            PaginationVO result = permissionService.getPermissionList(paginationVO);
+//            return new PaginationMessage(result,200, MessageErrorEnum.SUCCESS.getInfo(),true);
+//        }catch (Exception e){
+//            return super.returnPaginationMessage(e);
+//        }
+//    }
+
     @GetMapping(value = "/getList")
-    public PaginationMessage getPermissionList(PaginationVO paginationVO){
+    public ModelAndView getPermissionList(@RequestBody PaginationVO paginationVO){
         try {
             PaginationVO result = permissionService.getPermissionList(paginationVO);
-            return new PaginationMessage(result,200, MessageErrorEnum.SUCCESS.getInfo(),true);
+            ModelAndView modelAndView = new ModelAndView();
+            modelAndView.setViewName("permission/permission");
+            modelAndView.addObject("result",result);
+            return modelAndView;
         }catch (Exception e){
-            return super.returnPaginationMessage(e);
+            return new ModelAndView();
         }
     }
 
-    @PutMapping(value = "/add")
-    public SimpleMessage getPermission(PermissionVO permissionVO){
+    @PostMapping(value = "/add")
+    public SimpleMessage getPermission(@RequestBody PermissionVO permissionVO){
         try {
             permissionService.addPermission(permissionVO);
             return new SimpleMessage("success",200, MessageErrorEnum.SUCCESS.getInfo(),true);
@@ -42,7 +56,7 @@ public class PermissionController extends BaseController {
     }
 
     @DeleteMapping(value = "/delete")
-    public SimpleMessage deletePermission(PermissionVO permissionVO){
+    public SimpleMessage deletePermission(@RequestBody PermissionVO permissionVO){
         try {
             permissionService.deletePermission(permissionVO);
             return new SimpleMessage("success",200, MessageErrorEnum.SUCCESS.getInfo(),true);
@@ -53,7 +67,7 @@ public class PermissionController extends BaseController {
     }
 
     @PutMapping(value = "/update")
-    public SimpleMessage updatePermission(PermissionVO permissionVO){
+    public SimpleMessage updatePermission(@RequestBody PermissionVO permissionVO){
         try {
             permissionService.updatePermission(permissionVO);
             return new SimpleMessage("success",200, MessageErrorEnum.SUCCESS.getInfo(),true);
@@ -64,7 +78,7 @@ public class PermissionController extends BaseController {
     }
 
     @GetMapping(value = "/getById")
-    public SimpleMessage getPermissionById(PermissionVO permissionVO){
+    public SimpleMessage getPermissionById(@RequestBody PermissionVO permissionVO){
         try {
             permissionService.getPermissionById(permissionVO);
             return new SimpleMessage(permissionVO,200, MessageErrorEnum.SUCCESS.getInfo(),true);

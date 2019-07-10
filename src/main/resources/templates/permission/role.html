@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>role</title>
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#addRole").click(function () {
+                var permissions = new Array();
+                var requestData = {
+                    roleName:$("#roleName").val(),
+                    permissions:permissions
+                };
+                $.ajax({
+                    url: "/role/add",
+                    type: "POST",
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    data: JSON.stringify(requestData),
+                    success:function (data) {
+                        if (data.success){
+                            location.reload(true);
+                        } else{
+                            alert("添加失败");
+                        }
+                    },
+                    error:function (data) {
+                        alert("添加失败");
+                    }
+                });
+            });
+        })
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="checkbox"></td>
+        <th>角色名称</th>
+        <th>创建时间</th>
+        <th>更新时间</th>
+    </tr>
+    <#list result.pageData as role>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>${role.roleName!}</td>
+        <td>${role.createTime!}</td>
+        <td>${role.updateTime!"--"}</td>
+    </tr>
+</#list>
+</table>
+<div>
+    角色名称：<input type="text" id="roleName"/><br>
+    <button id="addRole">增加</button>
+</div>
+</body>
+</html>

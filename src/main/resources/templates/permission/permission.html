@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>permission</title>
+        <script src="/static/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#addPermission").click(function () {
+                    $.ajax({
+                        url: "/permission/add",
+                        type: "POST",
+                        dataType: 'json',
+                        contentType: 'application/json',
+                        data: {
+                            permissionName:$("#permissionName").val(),
+                            url:$("#url").val(),
+                            resourceType:$("#resourceType").val()
+                        },
+                        success:function (data) {
+                            if (data.success){
+                                location.reload(true);
+                            } else{
+                                alert("添加失败");
+                            }
+                        },
+                        error:function (data) {
+                            alert("添加失败");
+                        }
+                    });
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>权限名称</th>
+                <th>url</th>
+                <th>资源类型</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+            </tr>
+            <#list result.pageData as permission>
+                <tr>
+                    <td>${permission.permissionName!}</td>
+                    <td>${permission.url!}</td>
+                    <td>${permission.resourceType!}</td>
+                    <td>${permission.createTime!}</td>
+                    <td>${permission.updateTime!"--"}</td>
+                </tr>
+            </#list>
+        </table>
+        <div>
+            权限名称：<input type="text" id="permissionName"/><br>
+            url:<input type="text" id="url"/><br>
+            资源类型：<input type="text" id="resourceType"><br>
+            <button id="addPermission" onclick="addPermission()">增加</button>
+        </div>
+    </body>
+</html>

@@ -1,7 +1,6 @@
 package com.xiayu.module.user.vo;
 
 import com.xiayu.common.vo.BaseVO;
-import com.xiayu.module.permission.entity.Permission;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,6 +16,8 @@ import java.util.List;
 @Setter
 @Getter
 public class RoleVO extends BaseVO {
+
     private String roleName;
-    private List<Permission> permissions;
+
+    private List<PermissionVO> permissions;
 }
