@@ -3,8 +3,6 @@ package com.xiayu.module.course.service;
 import com.xiayu.common.vo.PaginationVO;
 import com.xiayu.module.course.vo.ChapterVO;
 
-import java.util.List;
-
 public interface ChapterService {
 
     ChapterVO findById(String id) throws Exception;
