@@ -3,19 +3,19 @@ package com.xiayu.module.user.vo;
 import com.xiayu.common.vo.BaseVO;
 import com.xiayu.module.file.entity.FileComment;
 import com.xiayu.module.file.entity.FileSuggestion;
-import com.xiayu.module.user.entity.*;
+import com.xiayu.module.file.vo.FileCommentVO;
+import com.xiayu.module.file.vo.FileSuggestionVO;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Date;
 import java.util.List;
 
-@Setter
-@Getter
+@Data
 public class UserVO extends BaseVO {
     private String id;
-    private UserClass userClass;
-    private UserGroup userGroup;
+    private UserClassVO userClass;
+    private UserGroupVO userGroup;
     private int userNumber;
     private String nickname;
     private String loginName;
@@ -28,11 +28,11 @@ public class UserVO extends BaseVO {
     private boolean isPhoneChecked;
     private boolean isEmailChecked;
     private String picture;
-    private List<UserLogin> userLogins;
-    private List<FileComment> fileComments;
-    private List<UserLikeComment> userLikeComments;
-    private List<FileSuggestion> fileSuggestions;
-    private List<UserVideoNote> userVideoNotes;
-    private List<RealtimeComments> realtimeComments;
-    private List<UserDownload> userDownloads;
+    private List<UserLoginVO> userLogins;
+    private List<FileCommentVO> fileComments;
+    private List<UserLikeCommentVO> userLikeComments;
+    private List<FileSuggestionVO> fileSuggestions;
+    private List<UserVideoNoteVO> userVideoNotes;
+    private List<RealtimeCommentsVO> realtimeComments;
+    private List<UserDownloadVO> userDownloads;
 }

@@ -1,12 +1,10 @@
 package com.xiayu.module.user.service.serviceimpl;
 
 import com.xiayu.common.vo.PaginationVO;
-import com.xiayu.module.permission.entity.Permission;
 import com.xiayu.module.permission.entity.Role;
 import com.xiayu.module.permission.repository.RoleRepository;
+import com.xiayu.module.permission.vo.RoleVO;
 import com.xiayu.module.user.service.RoleService;
-import com.xiayu.module.user.vo.PermissionVO;
-import com.xiayu.module.user.vo.RoleVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -60,8 +58,6 @@ public class RoleServiceImpl implements RoleService {
         Optional<Role> role = roleRepository.findById(roleVO.getId());
         role.ifPresent(role1 -> {
             roleVO.setRoleName(role1.getRoleName());
-            List<PermissionVO> permissionVOS = new ArrayList<>();
-            roleVO.setPermissions(permissionVOS);
             roleVO.generalElementMapper(role1);
         });
         return roleVO;
@@ -71,13 +67,6 @@ public class RoleServiceImpl implements RoleService {
     public boolean addRole(RoleVO roleVO) {
         Role role = new Role();
         role.setRoleName(roleVO.getRoleName());
-        List<Permission> permissions = new ArrayList<>();
-        List<PermissionVO> permissionVOS = roleVO.getPermissions();
-        permissionVOS.forEach(permissionVO -> {
-            Permission permission = new Permission();
-            permission.setId(permissionVO.getId());
-            permissions.add(permission);
-        });
         role.setCreateId(roleVO.getCreateId());
         roleRepository.save(role);
         return true;

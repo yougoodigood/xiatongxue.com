@@ -4,8 +4,8 @@ import com.xiayu.common.vo.PaginationVO;
 import com.xiayu.module.permission.entity.Permission;
 import com.xiayu.enumeration.ResourceTypeEnum;
 import com.xiayu.module.permission.repository.PermissionRepository;
+import com.xiayu.module.permission.vo.PermissionVO;
 import com.xiayu.module.user.service.PermissionService;
-import com.xiayu.module.user.vo.PermissionVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +50,7 @@ public class PermissionServiceImpl implements PermissionService {
             PermissionVO permissionVO = new PermissionVO();
             permissionVO.setUrl(permission.getUrl());
             permissionVO.setPermissionName(permission.getPermissionName());
-            permissionVO.setResourceType(permission.getResourceType().toString());
+            permissionVO.setResourceType(permission.getResourceType());
             permissionVO.generalElementMapper(permission);
             permissionVOS.add(permissionVO);
         });
@@ -62,7 +62,7 @@ public class PermissionServiceImpl implements PermissionService {
     public boolean addPermission(PermissionVO permissionVO) throws Exception{
         Permission permission = new Permission();
         permission.setPermissionName(permissionVO.getPermissionName());
-        permission.setResourceType(ResourceTypeEnum.valueOf(permissionVO.getResourceType()));
+        permission.setResourceType(permissionVO.getResourceType());
         permission.setUrl(permissionVO.getUrl());
         permission.setCreateId("1");
         permissionRepository.save(permission);
@@ -73,7 +73,7 @@ public class PermissionServiceImpl implements PermissionService {
         Permission permission = permissionRepository.findById(permissionVO.getId()).get();
         permissionVO.setUrl(permission.getUrl());
         permissionVO.setPermissionName(permission.getPermissionName());
-        permissionVO.setResourceType(permission.getResourceType().toString());
+        permissionVO.setResourceType(permission.getResourceType());
         permissionVO.generalElementMapper(permission);
         return permissionVO;
     }
@@ -93,7 +93,7 @@ public class PermissionServiceImpl implements PermissionService {
             logger.error("updatePermission:" + e);
             throw new RuntimeException("请求ID错误");
         }
-        permission.setResourceType(ResourceTypeEnum.valueOf(permissionVO.getResourceType()));
+        permission.setResourceType(permissionVO.getResourceType());
         permission.setPermissionName(permissionVO.getPermissionName());
         permission.setUrl(permissionVO.getUrl());
         permission.setUpdateId("1");

@@ -1,12 +1,11 @@
 package com.xiayu.module.permission.controller;
 
 import com.xiayu.common.controller.BaseController;
-import com.xiayu.common.message.PaginationMessage;
 import com.xiayu.common.vo.PaginationVO;
 import com.xiayu.common.message.SimpleMessage;
 import com.xiayu.enumeration.MessageErrorEnum;
+import com.xiayu.module.permission.vo.PermissionVO;
 import com.xiayu.module.user.service.PermissionService;
-import com.xiayu.module.user.vo.PermissionVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

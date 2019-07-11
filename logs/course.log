@@ -13239,3 +13239,40 @@ Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xia
 2019-07-11 13:40:53,589 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"]
 2019-07-11 13:40:53,785 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2019-07-11 13:40:53,785 [INFO ] com.xiayu.XiaYuApplication  : Started XiaYuApplication in 6.876 seconds (JVM running for 8.055)
+2019-07-11 16:55:11,325 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-11 16:55:11,340 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 16:55:11,434 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 17:00:20,108 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 8672 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 17:00:20,124 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 17:00:21,278 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 17:00:21,450 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 172ms. Found 23 repository interfaces.
+2019-07-11 17:00:21,810 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a2bc60c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 17:00:22,192 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 17:00:22,217 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 17:00:22,226 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 17:00:22,227 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 17:00:22,231 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 17:00:22,231 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 17:00:22,231 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 17:00:22,231 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 17:00:23,324 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 17:00:24,708 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 17:00:24,708 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 4537 ms
+2019-07-11 17:00:25,012 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 17:00:25,124 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 17:00:25,231 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 17:00:25,231 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 17:00:25,418 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 17:00:25,434 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 17:00:25,638 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 17:00:25,688 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 17:00:25,903 [WARN ] org.hibernate.id.UUIDHexGenerator  : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-07-11 17:00:26,027 [WARN ] net.sf.ehcache.config.ConfigurationFactory  : No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/hello.20160903-134321/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-07-11 17:00:26,918 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 17:00:27,995 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-11 17:00:28,154 [INFO ] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping  : Adding welcome page template: index
+2019-07-11 17:00:28,474 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"]
+2019-07-11 17:00:28,654 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-11 17:00:28,654 [INFO ] com.xiayu.XiaYuApplication  : Started XiaYuApplication in 8.861 seconds (JVM running for 10.498)
