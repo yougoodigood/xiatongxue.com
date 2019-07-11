@@ -60,14 +60,7 @@ public class RoleServiceImpl implements RoleService {
         Optional<Role> role = roleRepository.findById(roleVO.getId());
         role.ifPresent(role1 -> {
             roleVO.setRoleName(role1.getRoleName());
-            List<Permission> permissions = role1.getPermissions();
             List<PermissionVO> permissionVOS = new ArrayList<>();
-            permissions.forEach(permission -> {
-                PermissionVO permissionVO = new PermissionVO();
-                permissionVO.setPermissionName(permission.getPermissionName());
-                permissionVO.setId(permission.getId());
-                permissionVOS.add(permissionVO);
-            });
             roleVO.setPermissions(permissionVOS);
             roleVO.generalElementMapper(role1);
         });
@@ -85,7 +78,6 @@ public class RoleServiceImpl implements RoleService {
             permission.setId(permissionVO.getId());
             permissions.add(permission);
         });
-        role.setPermissions(permissions);
         role.setCreateId(roleVO.getCreateId());
         roleRepository.save(role);
         return true;

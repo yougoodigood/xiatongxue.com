@@ -5,13 +5,14 @@ import com.xiayu.enumeration.ResourceTypeEnum;
 import lombok.Getter;
 import lombok.Setter;
 
+
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 
-@Entity
+
 @Setter
 @Getter
+@Entity
 @Table(name = "t_permission")
 public class Permission extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 5543788854321691866L;
@@ -22,6 +23,7 @@ public class Permission extends BaseEntity implements Serializable {
     @Column
     private ResourceTypeEnum resourceType;
 
-    @ManyToMany(mappedBy = "permissions")
-    private List<Role> roles;
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "system_menu_id")
+    private SystemMenu systemMenus;
 }

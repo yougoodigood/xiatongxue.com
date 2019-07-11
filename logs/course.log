@@ -12276,3 +12276,966 @@ java.lang.NullPointerException: null
 2019-07-11 09:28:08,606 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
 2019-07-11 09:28:10,250 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
 2019-07-11 09:28:42,758 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
+2019-07-11 09:55:31,460 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
+2019-07-11 09:55:31,460 [INFO ] com.xiayu.config.LoginInterceptor  : session 为 null,或者未登录
+2019-07-11 09:55:31,468 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-11 09:55:31,491 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-11 12:07:38,406 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-11 12:07:38,422 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 12:07:38,484 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 12:07:50,185 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 8392 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 12:07:50,201 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 12:07:51,766 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 12:07:52,120 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 353ms. Found 23 repository interfaces.
+2019-07-11 12:07:52,891 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4809976c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 12:07:53,297 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 12:07:53,313 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 12:07:53,328 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 12:07:53,328 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 12:07:53,328 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 12:07:53,328 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 12:07:53,328 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 12:07:53,328 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 12:07:54,407 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 12:07:55,666 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 12:07:55,666 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 5386 ms
+2019-07-11 12:07:55,995 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 12:07:56,103 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 12:07:56,202 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 12:07:56,204 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 12:07:56,391 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 12:07:56,407 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 12:07:56,587 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 12:07:56,618 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 12:07:56,829 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.roles references an unknown entity: java.util.List
+2019-07-11 12:07:56,829 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 12:07:56,829 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 12:07:56,844 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 12:07:56,860 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.roles references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$106/938613108.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.roles references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:07:25,742 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 22604 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:07:25,757 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:07:26,457 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:07:26,620 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 155ms. Found 23 repository interfaces.
+2019-07-11 13:07:26,950 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$997ccdd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:07:27,195 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:07:27,209 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:07:27,217 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:07:27,218 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:07:27,221 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:07:27,221 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:07:27,221 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:07:27,221 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:07:28,284 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:07:28,393 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:07:28,393 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2589 ms
+2019-07-11 13:07:28,721 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:07:28,799 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:07:28,893 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:07:28,893 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:07:29,044 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:07:29,061 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:07:29,221 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:07:29,252 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:07:29,424 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:07:29,441 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:07:29,445 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:07:29,456 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:07:29,464 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$106/612693043.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:12:40,737 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 9808 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:12:40,753 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:12:41,736 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:12:41,893 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 157ms. Found 23 repository interfaces.
+2019-07-11 13:12:42,240 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f1da6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:12:42,529 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:12:42,545 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:12:42,545 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:12:42,560 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:12:42,568 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:12:42,568 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:12:42,568 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:12:42,568 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:12:43,619 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:12:44,942 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:12:44,942 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 4111 ms
+2019-07-11 13:12:45,221 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:12:45,314 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:12:45,392 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:12:45,392 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:12:45,529 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:12:45,545 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:12:45,737 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:12:45,768 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:12:45,950 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:12:45,953 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:12:45,957 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:12:45,969 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:12:45,978 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$104/299819831.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:13:48,969 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 8404 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:13:48,976 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:13:49,651 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:13:49,816 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 147ms. Found 23 repository interfaces.
+2019-07-11 13:13:50,137 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b0f98c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:13:50,394 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:13:50,409 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:13:50,409 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:13:50,409 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:13:50,425 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:13:50,425 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:13:50,425 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:13:50,425 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:13:51,497 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:13:51,621 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:13:51,621 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2607 ms
+2019-07-11 13:13:51,934 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:13:52,029 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:13:52,105 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:13:52,105 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:13:52,254 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:13:52,269 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:13:52,426 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:13:52,466 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:13:52,636 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:13:52,651 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:13:52,651 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:13:52,651 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:13:52,676 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$105/217470033.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:15:17,752 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 620 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:15:17,768 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:15:18,455 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:15:18,604 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 142ms. Found 23 repository interfaces.
+2019-07-11 13:15:18,925 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ae6ccb20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:15:19,152 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:15:19,180 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:15:19,188 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:15:19,189 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:15:19,195 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:15:19,196 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:15:19,196 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:15:19,196 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:15:20,252 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:15:20,361 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:15:20,361 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2562 ms
+2019-07-11 13:15:20,701 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:15:20,784 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:15:20,862 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:15:20,862 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:15:20,998 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:15:21,014 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:15:21,194 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:15:21,221 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:15:21,393 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:15:21,393 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:15:21,393 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:15:21,408 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:15:21,424 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$103/1061448687.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:19:08,586 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 28116 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:19:08,588 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:19:09,253 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:19:09,424 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 156ms. Found 23 repository interfaces.
+2019-07-11 13:19:09,737 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e1fe25c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:19:09,998 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:19:09,998 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:19:10,013 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:19:10,013 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:19:10,013 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:19:10,013 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:19:10,013 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:19:10,013 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:19:11,089 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:19:11,221 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:19:11,221 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2602 ms
+2019-07-11 13:19:11,514 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:19:11,620 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:19:11,691 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:19:11,693 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:19:11,847 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:19:11,862 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:19:12,045 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:19:12,082 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:19:12,253 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:19:12,253 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:19:12,253 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:19:12,269 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:19:12,269 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$105/562561015.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:19:53,253 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 24276 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:19:53,253 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:19:53,926 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:19:54,090 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 164ms. Found 23 repository interfaces.
+2019-07-11 13:19:54,409 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bae4815] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:19:54,669 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:19:54,683 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:19:54,693 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:19:54,693 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:19:54,701 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:19:54,701 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:19:54,702 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:19:54,702 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:19:55,768 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:19:55,893 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:19:55,893 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2593 ms
+2019-07-11 13:19:56,197 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:19:56,284 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:19:56,347 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:19:56,347 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:19:56,498 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:19:56,514 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:19:56,686 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:19:56,717 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:19:56,893 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:19:56,893 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:19:56,893 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:19:56,914 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:19:56,922 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$105/1349025531.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:22:19,211 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 24952 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:22:19,218 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:22:19,893 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:22:20,046 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 153ms. Found 23 repository interfaces.
+2019-07-11 13:22:20,380 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d35d084] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:22:20,637 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:22:20,653 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:22:20,653 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:22:20,653 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:22:20,670 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:22:20,670 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:22:20,670 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:22:20,670 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:22:21,753 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:22:21,862 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:22:21,862 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2610 ms
+2019-07-11 13:22:22,184 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:22:22,268 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:22:22,346 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:22:22,346 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:22:22,498 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:22:22,514 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:22:22,695 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:22:22,723 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:22:22,894 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:22:22,894 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:22:22,910 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:22:22,910 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:22:22,926 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$106/373437697.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:25:24,604 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 27300 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:25:24,620 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:25:25,284 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:25:25,443 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 158ms. Found 23 repository interfaces.
+2019-07-11 13:25:25,753 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3dbe0e8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:25:25,999 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:25:26,015 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:25:26,030 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:25:26,030 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:25:26,030 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:25:26,030 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:25:26,030 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:25:26,030 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:25:27,104 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:25:27,221 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:25:27,221 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2570 ms
+2019-07-11 13:25:27,530 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:25:27,620 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:25:27,695 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:25:27,697 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:25:27,831 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:25:27,847 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:25:28,030 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:25:28,075 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:25:28,237 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:25:28,252 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:25:28,252 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:25:28,268 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:25:28,284 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$106/975001918.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:29:00,847 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 17480 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:29:00,847 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:29:01,515 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:29:01,722 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 207ms. Found 23 repository interfaces.
+2019-07-11 13:29:02,089 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$61e5a595] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:29:02,332 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:29:02,348 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:29:02,348 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:29:02,348 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:29:02,363 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:29:02,363 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:29:02,363 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:29:02,363 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:29:03,456 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:29:03,572 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:29:03,572 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2679 ms
+2019-07-11 13:29:03,878 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:29:03,971 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:29:04,030 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:29:04,030 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:29:04,193 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:29:04,209 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:29:04,362 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:29:04,393 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:29:04,589 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.xiayu.module.permission.entity.Permission.systemMenu in com.xiayu.module.permission.entity.SystemMenu.permissions
+2019-07-11 13:29:04,589 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:29:04,589 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:29:04,604 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:29:04,604 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.xiayu.module.permission.entity.Permission.systemMenu in com.xiayu.module.permission.entity.SystemMenu.permissions
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$103/164714495.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.xiayu.module.permission.entity.Permission.systemMenu in com.xiayu.module.permission.entity.SystemMenu.permissions
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:785) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:736) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1696) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1664) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:30:17,477 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 30072 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:30:17,483 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:30:18,136 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:30:18,300 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 149ms. Found 23 repository interfaces.
+2019-07-11 13:30:18,620 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$85822f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:30:18,878 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:30:18,894 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:30:18,894 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:30:18,894 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:30:18,909 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:30:18,909 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:30:18,909 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:30:18,909 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:30:19,974 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:30:20,089 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:30:20,089 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2574 ms
+2019-07-11 13:30:20,394 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:30:20,489 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:30:20,546 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:30:20,546 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:30:20,720 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:30:20,722 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:30:20,893 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:30:20,925 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:30:21,105 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:30:21,105 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:30:21,120 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:30:21,120 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:30:21,136 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$99/1000171161.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:35:38,315 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 28908 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:35:38,315 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:35:39,015 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:35:39,192 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 161ms. Found 23 repository interfaces.
+2019-07-11 13:35:39,515 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5dc7247c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:35:39,769 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:35:39,784 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:35:39,784 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:35:39,784 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:35:39,800 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:35:39,800 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:35:39,800 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:35:39,800 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:35:40,893 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:35:41,030 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:35:41,030 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2668 ms
+2019-07-11 13:35:41,393 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:35:41,499 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:35:41,583 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:35:41,585 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:35:41,754 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:35:41,769 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:35:42,054 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:35:42,132 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:35:42,410 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:35:42,410 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:35:42,410 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:35:42,425 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:35:42,444 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$97/1416706187.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:37:41,831 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 9808 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:37:41,831 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:37:42,530 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:37:42,711 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 165ms. Found 23 repository interfaces.
+2019-07-11 13:37:43,030 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7238f5a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:37:43,300 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:37:43,316 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:37:43,316 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:37:43,316 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:37:43,331 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:37:43,331 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:37:43,331 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:37:43,331 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:37:44,410 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:37:44,516 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:37:44,516 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2638 ms
+2019-07-11 13:37:44,816 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:37:44,910 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:37:44,986 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:37:44,988 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:37:45,136 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:37:45,152 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:37:45,316 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:37:45,347 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:37:45,530 [WARN ] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+2019-07-11 13:37:45,530 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:37:45,530 [INFO ] org.apache.catalina.core.StandardService  : Stopping service [Tomcat]
+2019-07-11 13:37:45,546 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 13:37:45,546 [ERROR] org.springframework.boot.SpringApplication  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$103/1658511941.getObject(Unknown Source) ~[?:?]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.xiayu.XiaYuApplication.main(XiaYuApplication.java:17) [classes/:?]
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.xiayu.module.permission.entity.Permission.systemMenus references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:97) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 17 more
+2019-07-11 13:38:17,797 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 7488 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:38:17,813 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:38:18,546 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:38:18,715 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 168ms. Found 23 repository interfaces.
+2019-07-11 13:38:19,046 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$66a7f766] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:38:19,316 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:38:19,331 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:38:19,331 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:38:19,331 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:38:19,347 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:38:19,347 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:38:19,347 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:38:19,347 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:38:20,409 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:38:20,515 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:38:20,515 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2655 ms
+2019-07-11 13:38:20,831 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:38:20,910 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:38:20,992 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:38:20,994 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:38:21,122 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:38:21,137 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:38:21,316 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:38:21,347 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:38:21,546 [WARN ] org.hibernate.id.UUIDHexGenerator  : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-07-11 13:38:21,651 [WARN ] net.sf.ehcache.config.ConfigurationFactory  : No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/hello.20160903-134321/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-07-11 13:38:22,532 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 13:38:23,300 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-11 13:38:23,409 [INFO ] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping  : Adding welcome page template: index
+2019-07-11 13:38:23,653 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:38:23,848 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-11 13:38:23,848 [INFO ] com.xiayu.XiaYuApplication  : Started XiaYuApplication in 6.522 seconds (JVM running for 7.657)
+2019-07-11 13:40:38,089 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-11 13:40:38,089 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 13:40:38,089 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 13:40:47,253 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 28112 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 13:40:47,253 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 13:40:47,909 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 13:40:48,085 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 159ms. Found 23 repository interfaces.
+2019-07-11 13:40:48,396 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d0d52f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 13:40:48,636 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 13:40:48,652 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:40:48,669 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 13:40:48,670 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 13:40:48,678 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 13:40:48,678 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 13:40:48,678 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 13:40:48,678 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 13:40:49,738 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 13:40:49,847 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 13:40:49,847 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2547 ms
+2019-07-11 13:40:50,152 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 13:40:50,282 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 13:40:50,422 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 13:40:50,438 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 13:40:50,747 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 13:40:50,763 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 13:40:50,977 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 13:40:51,015 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 13:40:51,253 [WARN ] org.hibernate.id.UUIDHexGenerator  : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-07-11 13:40:51,347 [WARN ] net.sf.ehcache.config.ConfigurationFactory  : No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/hello.20160903-134321/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-07-11 13:40:52,238 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 13:40:53,238 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-11 13:40:53,363 [INFO ] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping  : Adding welcome page template: index
+2019-07-11 13:40:53,589 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"]
+2019-07-11 13:40:53,785 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-11 13:40:53,785 [INFO ] com.xiayu.XiaYuApplication  : Started XiaYuApplication in 6.876 seconds (JVM running for 8.055)

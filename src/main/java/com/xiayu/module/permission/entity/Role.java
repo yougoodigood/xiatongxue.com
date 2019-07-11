@@ -18,7 +18,7 @@ public class Role extends BaseEntity implements Serializable {
     private String roleName;
 
     @ManyToMany
-    @JoinTable(name = "t_roles_permission", joinColumns = @JoinColumn(name = "role_id"),
-            inverseJoinColumns = @JoinColumn(name = "permission_id"))
-    private List<Permission> permissions;
+    @JoinTable(name = "t_role_menu",joinColumns = @JoinColumn(name = "menu_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private List<SystemMenu> systemMenu;
 }
