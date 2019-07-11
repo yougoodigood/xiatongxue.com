@@ -9,6 +9,5 @@ import java.util.Optional;
 
 @Repository
 public interface ChapterRepository extends BaseRepository<Chapter> {
-    @Override
-    Optional<Chapter> findById(String id);
+
 }
