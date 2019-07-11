@@ -11,13 +11,4 @@ import java.util.Optional;
 @Repository
 public interface PermissionRepository extends BaseRepository<Permission> {
 
-    @Override
-    Page<Permission> findAll(Specification<Permission> specificationec, Pageable pageable);
-
-    @Override
-    Optional<Permission> findById(String id);
-
-    @Override
-    Permission save(Permission permission);
-
 }

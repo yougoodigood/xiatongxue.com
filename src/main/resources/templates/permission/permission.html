@@ -5,16 +5,17 @@
         <script type="text/javascript">
             $(function () {
                 $("#addPermission").click(function () {
+                    var requestData = {
+                        permissionName:$("#permissionName").val(),
+                        url:$("#url").val(),
+                        resourceType:$("#resourceType").val()
+                    };
                     $.ajax({
                         url: "/permission/add",
                         type: "POST",
                         dataType: 'json',
                         contentType: 'application/json',
-                        data: {
-                            permissionName:$("#permissionName").val(),
-                            url:$("#url").val(),
-                            resourceType:$("#resourceType").val()
-                        },
+                        data: JSON.stringify(requestData),
                         success:function (data) {
                             if (data.success){
                                 location.reload(true);

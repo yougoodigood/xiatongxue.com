@@ -12038,3 +12038,241 @@ java.lang.NullPointerException: null
 2019-07-10 17:29:39,424 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
 2019-07-10 17:29:44,087 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
 2019-07-10 17:29:44,108 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:19,077 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:19,093 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:19,660 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:19,674 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:22,661 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
+2019-07-10 17:37:22,661 [INFO ] com.xiayu.config.LoginInterceptor  : session 为 null,或者未登录
+2019-07-10 17:37:22,668 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:22,706 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:24,648 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:24,665 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:25,188 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:25,202 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:25,612 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:25,629 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:26,036 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:26,047 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:26,307 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:26,321 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:26,571 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:26,583 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:26,827 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:26,840 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:27,103 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:27,121 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:37:27,340 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:37:27,355 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:59:36,725 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/role/getList
+2019-07-10 17:59:36,725 [INFO ] com.xiayu.config.LoginInterceptor  : session 为 null,或者未登录
+2019-07-10 17:59:36,731 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 17:59:36,762 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 17:59:45,612 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/toLogin
+2019-07-10 17:59:46,910 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/index
+2019-07-10 17:59:51,715 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
+2019-07-10 18:01:39,309 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-10 18:01:39,309 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-10 18:01:39,356 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-10 18:02:16,070 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 23464 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-10 18:02:16,086 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-10 18:02:17,562 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-10 18:02:17,746 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 178ms. Found 23 repository interfaces.
+2019-07-10 18:02:18,215 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78bd8790] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-10 18:02:18,559 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-10 18:02:18,568 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-10 18:02:18,584 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-10 18:02:18,584 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-10 18:02:18,584 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-10 18:02:18,584 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-10 18:02:18,584 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-10 18:02:18,584 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-10 18:02:19,681 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-10 18:02:21,084 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-10 18:02:21,084 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 4941 ms
+2019-07-10 18:02:21,436 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-10 18:02:21,559 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-10 18:02:21,651 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-10 18:02:21,653 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-10 18:02:21,876 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-10 18:02:21,896 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-10 18:02:22,103 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-10 18:02:22,135 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-10 18:02:22,335 [WARN ] org.hibernate.id.UUIDHexGenerator  : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-07-10 18:02:22,463 [WARN ] net.sf.ehcache.config.ConfigurationFactory  : No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/hello.20160903-134321/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-07-10 18:02:23,373 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-10 18:02:24,226 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-10 18:02:24,343 [INFO ] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping  : Adding welcome page template: index
+2019-07-10 18:02:24,606 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"]
+2019-07-10 18:02:24,824 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-10 18:02:24,826 [INFO ] com.xiayu.XiaYuApplication  : Started XiaYuApplication in 9.095 seconds (JVM running for 13.956)
+2019-07-10 18:02:26,516 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-10 18:02:26,516 [INFO ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2019-07-10 18:02:26,524 [INFO ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 8 ms
+2019-07-10 18:02:26,548 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-10 18:02:26,632 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-10 18:02:36,185 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/toLogin
+2019-07-10 18:02:36,217 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-10 18:02:37,720 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
+2019-07-10 18:04:08,711 [WARN ] org.springframework.web.servlet.PageNotFound  : No mapping for GET /user/getById/4028e4f66bd5f19e016bd5f274680000
+2019-07-10 18:04:08,716 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/error
+2019-07-10 18:04:16,162 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/findById/4028e4f66bd5f19e016bd5f274680000
+2019-07-10 18:04:16,176 [WARN ] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver  : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'id' is not present]
+2019-07-10 18:04:16,178 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/error
+2019-07-10 18:04:28,329 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/role/getList
+2019-07-10 18:04:28,334 [WARN ] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver  : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.web.servlet.ModelAndView com.xiayu.module.permission.controller.RoleController.getRoleList(com.xiayu.common.vo.PaginationVO)]
+2019-07-10 18:04:28,336 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/error
+2019-07-11 09:14:17,760 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-11 09:14:17,760 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 09:14:17,760 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 09:16:06,708 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 21868 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 09:16:06,712 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 09:16:07,517 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 09:16:07,674 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 157ms. Found 23 repository interfaces.
+2019-07-11 09:16:08,001 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0d956d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 09:16:08,321 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 09:16:08,337 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 09:16:08,337 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 09:16:08,337 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 09:16:08,352 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 09:16:08,352 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 09:16:08,352 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 09:16:08,352 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 09:16:09,441 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 09:16:10,776 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 09:16:10,776 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 4017 ms
+2019-07-11 09:16:11,080 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 09:16:11,174 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 09:16:11,243 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 09:16:11,259 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 09:16:11,396 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 09:16:11,412 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 09:16:11,580 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 09:16:11,612 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 09:16:11,807 [WARN ] org.hibernate.id.UUIDHexGenerator  : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-07-11 09:16:11,896 [WARN ] net.sf.ehcache.config.ConfigurationFactory  : No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/hello.20160903-134321/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-07-11 09:16:12,729 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 09:16:13,486 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-11 09:16:13,611 [INFO ] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping  : Adding welcome page template: index
+2019-07-11 09:16:13,871 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"]
+2019-07-11 09:16:14,063 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-11 09:16:14,065 [INFO ] com.xiayu.XiaYuApplication  : Started XiaYuApplication in 7.782 seconds (JVM running for 9.26)
+2019-07-11 09:16:23,829 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-11 09:16:23,829 [INFO ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2019-07-11 09:16:23,837 [INFO ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 8 ms
+2019-07-11 09:16:23,859 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/findById/4028e4f66bd5f19e016bd5f274680000
+2019-07-11 09:16:23,859 [INFO ] com.xiayu.config.LoginInterceptor  : session 为 null,或者未登录
+2019-07-11 09:16:23,866 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-11 09:16:23,943 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-11 09:16:30,907 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/toLogin
+2019-07-11 09:16:30,951 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-11 09:16:32,192 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
+2019-07-11 09:16:43,414 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/permission/getList
+2019-07-11 09:17:06,579 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/permission/add
+2019-07-11 09:17:06,594 [WARN ] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver  : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: syntax error, expect {, actual error, pos 0, fastjson-version 1.2.58; nested exception is com.alibaba.fastjson.JSONException: syntax error, expect {, actual error, pos 0, fastjson-version 1.2.58]
+2019-07-11 09:17:06,598 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/error
+2019-07-11 09:18:22,003 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-11 09:18:22,034 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 09:18:22,034 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 09:18:28,147 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 14440 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 09:18:28,147 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 09:18:29,263 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 09:18:29,558 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 290ms. Found 23 repository interfaces.
+2019-07-11 09:18:29,881 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c93f692] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 09:18:30,111 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 09:18:30,142 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 09:18:30,142 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 09:18:30,142 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 09:18:30,158 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 09:18:30,158 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 09:18:30,158 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 09:18:30,158 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 09:18:31,229 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 09:18:31,354 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 09:18:31,354 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 3143 ms
+2019-07-11 09:18:31,617 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 09:18:31,708 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 09:18:31,776 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 09:18:31,776 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 09:18:31,958 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 09:18:31,975 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 09:18:32,142 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 09:18:32,174 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 09:18:32,384 [WARN ] org.hibernate.id.UUIDHexGenerator  : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-07-11 09:18:32,502 [WARN ] net.sf.ehcache.config.ConfigurationFactory  : No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/hello.20160903-134321/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-07-11 09:18:33,378 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 09:18:34,139 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-11 09:18:34,244 [INFO ] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping  : Adding welcome page template: index
+2019-07-11 09:18:34,470 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"]
+2019-07-11 09:18:34,636 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-11 09:18:34,636 [INFO ] com.xiayu.XiaYuApplication  : Started XiaYuApplication in 6.826 seconds (JVM running for 8.72)
+2019-07-11 09:18:43,810 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-11 09:18:43,810 [INFO ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2019-07-11 09:18:43,818 [INFO ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 8 ms
+2019-07-11 09:18:43,836 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/permission/getList
+2019-07-11 09:18:43,836 [INFO ] com.xiayu.config.LoginInterceptor  : session 为 null,或者未登录
+2019-07-11 09:18:43,843 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-11 09:18:43,909 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-11 09:18:52,190 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/toLogin
+2019-07-11 09:18:52,221 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-11 09:18:53,584 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
+2019-07-11 09:19:01,245 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/permission/getList
+2019-07-11 09:19:14,846 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/permission/add
+2019-07-11 09:19:24,386 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/permission/getList
+2019-07-11 09:26:06,190 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-11 09:26:06,208 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 09:26:06,214 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} closed
+2019-07-11 09:26:10,825 [INFO ] com.xiayu.XiaYuApplication  : Starting XiaYuApplication on 20160903-134321 with PID 8228 (E:\code\course\target\classes started by hello in E:\code\course)
+2019-07-11 09:26:10,840 [INFO ] com.xiayu.XiaYuApplication  : No active profile set, falling back to default profiles: default
+2019-07-11 09:26:11,760 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-11 09:26:11,929 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate  : Finished Spring Data repository scanning in 137ms. Found 23 repository interfaces.
+2019-07-11 09:26:12,226 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$740a37bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 09:26:12,486 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-11 09:26:12,502 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"]
+2019-07-11 09:26:12,502 [INFO ] org.apache.catalina.core.StandardService  : Starting service [Tomcat]
+2019-07-11 09:26:12,502 [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-11 09:26:12,517 [INFO ] org.apache.catalina.core.AprLifecycleListener  : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-11 09:26:12,517 [INFO ] org.apache.catalina.core.AprLifecycleListener  : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-07-11 09:26:12,517 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-11 09:26:12,517 [INFO ] org.apache.catalina.core.AprLifecycleListener  : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-11 09:26:13,602 [INFO ] org.apache.catalina.core.AprLifecycleListener  : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-07-11 09:26:13,724 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2019-07-11 09:26:13,724 [INFO ] org.springframework.web.context.ContextLoader  : Root WebApplicationContext: initialization completed in 2842 ms
+2019-07-11 09:26:14,028 [INFO ] com.alibaba.druid.pool.DruidDataSource  : {dataSource-1} inited
+2019-07-11 09:26:14,145 [INFO ] org.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-11 09:26:14,229 [INFO ] org.hibernate.Version  : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-11 09:26:14,230 [INFO ] org.hibernate.cfg.Environment  : HHH000206: hibernate.properties not found
+2019-07-11 09:26:14,391 [WARN ] org.hibernate.orm.deprecation  : HHH020100: The Ehcache second-level cache provider for Hibernate is deprecated.  See https://hibernate.atlassian.net/browse/HHH-12441 for details.
+2019-07-11 09:26:14,411 [INFO ] org.hibernate.annotations.common.Version  : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-11 09:26:14,592 [INFO ] org.hibernate.dialect.Dialect  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-11 09:26:14,621 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl  : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-11 09:26:14,835 [WARN ] org.hibernate.id.UUIDHexGenerator  : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-07-11 09:26:14,934 [WARN ] net.sf.ehcache.config.ConfigurationFactory  : No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/hello.20160903-134321/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-07-11 09:26:15,962 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-11 09:26:16,724 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-11 09:26:16,841 [INFO ] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping  : Adding welcome page template: index
+2019-07-11 09:26:17,102 [INFO ] org.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"]
+2019-07-11 09:26:17,286 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-11 09:26:17,288 [INFO ] com.xiayu.XiaYuApplication  : Started XiaYuApplication in 6.769 seconds (JVM running for 7.922)
+2019-07-11 09:26:26,780 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-11 09:26:26,781 [INFO ] org.springframework.web.servlet.DispatcherServlet  : Initializing Servlet 'dispatcherServlet'
+2019-07-11 09:26:26,787 [INFO ] org.springframework.web.servlet.DispatcherServlet  : Completed initialization in 6 ms
+2019-07-11 09:26:26,804 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-11 09:26:26,859 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-11 09:26:53,925 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/permission/getList
+2019-07-11 09:26:53,925 [INFO ] com.xiayu.config.LoginInterceptor  : session 为 null,或者未登录
+2019-07-11 09:26:53,944 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-11 09:27:50,688 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/login
+2019-07-11 09:27:50,704 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/changeVerifiedCode
+2019-07-11 09:28:08,567 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/user/toLogin
+2019-07-11 09:28:08,606 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-11 09:28:10,250 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
+2019-07-11 09:28:42,758 [INFO ] com.xiayu.config.LoginInterceptor  : access url info:/
