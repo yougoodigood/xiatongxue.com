@@ -3,6 +3,7 @@ package com.xiayu.module.user.controller;
 import com.xiayu.common.controller.BaseController;
 import com.xiayu.common.message.PaginationMessage;
 import com.xiayu.common.message.SimpleMessage;
+import com.xiayu.common.util.JWTUtil;
 import com.xiayu.common.util.MD5;
 import com.xiayu.common.util.VerificationImageUtils;
 import com.xiayu.module.user.entity.User;
@@ -121,7 +122,8 @@ public class UserController extends BaseController {
             HttpSession session = request.getSession(false);
             if (userVO.getPassword().equals(password) && session != null && verifiedCode.equals(session.getAttribute("verifiedCode"))){
                 session.setAttribute("LOGINED_FLAG", "LOGINED_SUCCESS");
-                return new SimpleMessage("登录成功",200,"login success",true);
+                String token = JWTUtil.sign(userVO.getLoginName(),userVO.getId());
+                return new SimpleMessage("登录成功",200,"login success",true,token);
             }else {
                 return new SimpleMessage("用户名或者密码错误",500,"loginname or password error",false);
             }
@@ -141,8 +143,8 @@ public class UserController extends BaseController {
             String verifyCode = VerificationImageUtils.generateVerifyCode(4);
             HttpSession session = request.getSession(false);
             session.setAttribute("verifiedCode", verifyCode.toLowerCase());
-            int w = 200, h = 80;
-            VerificationImageUtils.outputImage(w, h, response.getOutputStream(), verifyCode);
+            int weight = 200, height = 80;
+            VerificationImageUtils.outputImage(weight, height, response.getOutputStream(), verifyCode);
         } catch (Exception e) {
         }
     }

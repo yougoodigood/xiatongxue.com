@@ -1,5 +1,6 @@
 package com.xiayu.config;
 
+import com.xiayu.common.util.JWTUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -29,17 +30,27 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         logger.info("access url info:" + request.getRequestURI());
         String url = request.getRequestURI();
-        HttpSession session = request.getSession(false);
+
         if ("/user/login".equals(url) || "/user/add".equals(url) || "/user/changeVerifiedCode".equals(url) || "/user/toLogin".equals(url) || "/error".equals(url)) {
             return true;
+        }
+//        String token = request.getHeader("token");
+//        boolean verify = JWTUtil.verify(token);
+//        if (verify){
+//            String loginName = JWTUtil.getUserName(token);
+//            String userId = JWTUtil.getUserId(token);
+//        }else {
+//            logger.info("token exception");
+//            response.sendRedirect("/user/login");
+//            return false;
+//        }
+        HttpSession session = request.getSession(false);
+        if (session == null || session.getAttribute(LOGINED_FLAG) != LOGINED_SUCCESS) {
+            logger.info("session 为 null,或者未登录");
+            response.sendRedirect("/user/login");
+            return false;
         } else {
-            if (session == null || session.getAttribute(LOGINED_FLAG) != LOGINED_SUCCESS) {
-                logger.info("session 为 null,或者未登录");
-                response.sendRedirect("/user/login");
-                return false;
-            } else {
-                return true;
-            }
+            return true;
         }
     }
 }

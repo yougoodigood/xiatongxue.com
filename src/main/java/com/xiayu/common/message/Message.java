@@ -16,6 +16,7 @@ public class Message {
     private int code = 200;
     private String message = "success";
     private boolean success = true;
+    private String token = null;
     public Message(){}
     public Message(int code,String message,boolean success){
         this.code = code;

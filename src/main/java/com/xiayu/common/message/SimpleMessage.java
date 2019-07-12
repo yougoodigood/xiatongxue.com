@@ -20,8 +20,19 @@ public class SimpleMessage extends Message{
         this.result = result;
     }
 
+    public SimpleMessage(Object result,String token){
+        super.setToken(token);
+        this.result = result;
+    }
+
     public SimpleMessage(Object result,int code,String message,boolean success){
         super(code,message,success);
+        this.result = result;
+    }
+
+    public SimpleMessage(Object result,int code,String message,boolean success,String token){
+        super(code,message,success);
+        super.setToken(token);
         this.result = result;
     }
 }

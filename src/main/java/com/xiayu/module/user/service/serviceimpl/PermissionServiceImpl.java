@@ -2,7 +2,6 @@ package com.xiayu.module.user.service.serviceimpl;
 
 import com.xiayu.common.vo.PaginationVO;
 import com.xiayu.module.permission.entity.Permission;
-import com.xiayu.enumeration.ResourceTypeEnum;
 import com.xiayu.module.permission.repository.PermissionRepository;
 import com.xiayu.module.permission.vo.PermissionVO;
 import com.xiayu.module.user.service.PermissionService;
@@ -17,7 +16,9 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.persistence.criteria.Predicate;
 
 /**
