@@ -1,6 +1,7 @@
 package com.xiayu.module.course.entity;
 
 import com.xiayu.common.entity.BaseEntity;
+import com.xiayu.module.user.entity.User;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,6 +28,10 @@ public class Course extends BaseEntity implements Serializable {
 
     @Column
     private int chapterNumber;
+
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
+    @JoinColumn(name = "representative_id")
+    private User representativeUser;
 
     @OneToMany(mappedBy = "course", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Chapter> chapters;

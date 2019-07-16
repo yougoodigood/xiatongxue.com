@@ -1,6 +1,7 @@
 package com.xiayu.module.user.entity;
 
 import com.xiayu.common.entity.BaseEntity;
+import com.xiayu.module.course.entity.Course;
 import com.xiayu.module.file.entity.FileComment;
 import com.xiayu.module.file.entity.FileSuggestion;
 import lombok.Getter;
@@ -74,4 +75,7 @@ public class User extends BaseEntity implements Serializable {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<UserDownload> userDownloads;
+
+    @OneToMany(mappedBy = "representativeUser", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Course> representativeCourses;
 }
