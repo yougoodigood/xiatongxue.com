@@ -6,12 +6,10 @@ import com.xiayu.module.file.entity.FileComment;
 import com.xiayu.module.file.entity.FileSuggestion;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.context.annotation.Configuration;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 
 @Entity
@@ -29,6 +27,22 @@ public class User extends BaseEntity implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_group_id")
     private UserGroup userGroup;
+    Map<String,String> map = new HashMap<>();
+
+    public void getIT(){
+        List<String> list = new LinkedList<>();
+        List<String> list1 = new Vector<>();
+        Map<String,String> map = new HashMap<>();
+        Map<String,String> treeMap = new TreeMap<>();
+        Set<String> set = new HashSet<>();
+        Set<String> set1 = new TreeSet<>();
+        Map<String,String> map1 = new Hashtable<>();
+        Map<String,String> map2 = new LinkedHashMap<>();
+        Set<String> set2 = new LinkedHashSet<>();
+        set1.add("string");
+        Object object = new Object();
+    }
+
     @Column
     private int userNumber;
     @Column

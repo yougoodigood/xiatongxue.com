@@ -60,4 +60,12 @@ public class UserMessageTest {
         user.setLoginName("dabuliedian");
         useRabbitTemplateProducer.send("hello world message");
     }
+
+    @Test
+    public void test1(){
+
+        synchronized (this){
+            System.out.println("同步代码块");
+        }
+    }
 }
