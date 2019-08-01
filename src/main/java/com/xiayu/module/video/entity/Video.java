@@ -1,12 +1,14 @@
 package com.xiayu.module.video.entity;
 
 import com.xiayu.common.entity.BaseEntity;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@Data
 @Table(name = "t_video")
 public class Video extends BaseEntity implements Serializable {
 

@@ -1,5 +1,12 @@
 package com.xiayu.module.user.service.serviceimpl;
 
+import org.apache.naming.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
 /**
  * @Classname SynchronizedDemo
  * @Description
@@ -18,7 +25,9 @@ public class SynchronizedDemo {
 
     public synchronized void synchronizedMethod(){
         System.out.println("synchronized method");
+
+        XmlBeanFactory xmlBeanFactory = new XmlBeanFactory(new ClassPathResource("test.xml"));
+        Object myTest = xmlBeanFactory.getBean("myTest");
+//        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor();
     }
-
-
 }
